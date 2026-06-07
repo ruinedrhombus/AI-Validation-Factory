@@ -9,7 +9,9 @@ Framework constraints always in effect:
 - Prosumer / solo operator personas only
 - Target pricing $15-25/month without manager approval
 - 500 user capped launch, 20 beta testers first
-- AppSec / SCA / DevSecOps ideas flagged as [DOMAIN ADVANTAGE]
+- Generate both ideas completely independently of AppSec/DevSecOps background
+- Treat Shivam as first-time founder with no domain expertise
+- Pure unbiased research only, no domain flagging
 
 ---
 
@@ -178,6 +180,13 @@ Produces deploy-ready React/Tailwind landing pages for Vercel.
 - Based in Bangalore — India market for validation signal,
   Western market for revenue
 
+## Personal Interests (use these to guide idea generation)
+- Fitness, dating, productivity, social media presence
+- Gaming, sports, travel, food & cooking
+- Communicating with strangers, human connection
+- Age 25, active lifestyle, outgoing personality
+- At least 1 idea per run must come from these domains
+
 ---
 
 ## Standing Rules
@@ -188,5 +197,5 @@ Produces deploy-ready React/Tailwind landing pages for Vercel.
 - Never ask Shivam to touch any files himself
 - Always handle GitHub commits silently, confirm in one line
 - Prosumer only — no enterprise B2B, no pure consumer B2C
-- AppSec/DevSecOps ideas always flagged explicitly
+- No domain advantage flagging — ideas must be fully unbiased
 - Check FACTORY_MEMORY.md killed list before generating any idea
