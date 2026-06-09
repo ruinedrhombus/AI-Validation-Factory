@@ -10,10 +10,10 @@ Last run date: 2026-06-09
 |--------|-------|
 | Total runs | 5 |
 | Ideas generated | 10 |
-| Killed immediately | 3 |
-| Discussed | 5 |
+| Killed immediately | 4 |
+| Discussed | 6 |
 | Proceeded to validation | 0 |
-| Kill rate | 30% |
+| Kill rate | 40% |
 
 ---
 
@@ -26,8 +26,8 @@ Last run date: 2026-06-09
 | 2 | 2026-06-07 | ReportForge | Solo pentesters | Not discussed |
 | 3 | 2026-06-07 | ProgramPilot | Solo online fitness coaches | Stronger pick — session left -active, never discussed |
 | 3 | 2026-06-07 | RouteCraft | Solo travel advisors | Weaker — high platform risk |
-| 4 | 2026-06-08 | PrepPilot | Solo personal chefs / meal-prep operators | Stronger pick — Hotbox (validate reachability) |
-| 4 | 2026-06-08 | ClientPulse | Solo marketing freelancers | Weaker — crowded incumbent space |
+| 4 | 2026-06-08 | PrepPilot | Solo personal chefs / meal-prep operators | Hotbox — validate reachability |
+| 4 | 2026-06-08 | ClientPulse | Solo marketing freelancers | Killed — crowded incumbent space |
 | 5 | 2026-06-09 | ReplayCoach | Solo esports coaches (Valorant/LoL/CS2) | Hotbox — Shivam parked it; cleanest WTP yet, gated on niche size |
 | 5 | 2026-06-09 | LeagueDesk | Solo amateur sports league organizers | Killed — weak monetization, free WhatsApp/Sheets substitute |
 
@@ -37,6 +37,7 @@ Last run date: 2026-06-09
 | Run # | Date | Idea Name | Category | Reason |
 |-------|------|-----------|----------|--------|
 | 5 | 2026-06-09 | LeagueDesk | Amateur sports community ops | Weak monetization — hobbyist organizers run leagues for love not profit, and a free WhatsApp + Splitwise + Sheets stack is "good enough" for the small leagues that are most of the market |
+| 4 | 2026-06-08 | ClientPulse | Marketing analytics/reporting | Crowded incumbent category (AgencyAnalytics/Whatagraph/Looker Studio) — only wedge is "cheaper + AI voice," too thin for a 6wk/₹10k validation |
 | 2 | 2026-06-07 | TrustLite | B2B Security/Compliance | Episodic pain — only felt when deal blocks, high churn after first use, not recurring SaaS |
 | 1 | 2026-06-06 | ShipNote | Dev-tool marketing | Vitamin not painkiller — guilt-based not fear-based, ChatGPT does 80% for free, persona-product mismatch on pivot |
 
@@ -50,6 +51,7 @@ Last run date: 2026-06-09
 | 1 | 2026-06-06 | ShipNote | Real time-sink, liked the voice-learning angle | Killed — vitamin not painkiller |
 | 5 | 2026-06-09 | ReplayCoach | Cleanest willingness-to-pay logic to date (time saved = more billable students) | Hotbox — parked, gated on niche size |
 | 5 | 2026-06-09 | LeagueDesk | Genuine weekly pain, near-zero platform risk | Killed — weak monetization, free substitute |
+| 4 | 2026-06-08 | ClientPulse | Real weekly pain, proven willingness to pay | Killed — crowded incumbent category |
 
 ---
 
