@@ -10,10 +10,10 @@ Last run date: 2026-06-09
 |--------|-------|
 | Total runs | 5 |
 | Ideas generated | 10 |
-| Killed immediately | 2 |
-| Discussed | 3 |
+| Killed immediately | 3 |
+| Discussed | 5 |
 | Proceeded to validation | 0 |
-| Kill rate | 25% |
+| Kill rate | 30% |
 
 ---
 
@@ -28,14 +28,15 @@ Last run date: 2026-06-09
 | 3 | 2026-06-07 | RouteCraft | Solo travel advisors | Weaker — high platform risk |
 | 4 | 2026-06-08 | PrepPilot | Solo personal chefs / meal-prep operators | Stronger pick — Hotbox (validate reachability) |
 | 4 | 2026-06-08 | ClientPulse | Solo marketing freelancers | Weaker — crowded incumbent space |
-| 5 | 2026-06-09 | ReplayCoach | Solo esports coaches (Valorant/LoL/CS2) | Stronger pick — Proceed (validate niche size); cleanest WTP yet |
-| 5 | 2026-06-09 | LeagueDesk | Solo amateur sports league organizers | Weaker — Hotbox; weak monetization, free WhatsApp substitute |
+| 5 | 2026-06-09 | ReplayCoach | Solo esports coaches (Valorant/LoL/CS2) | Hotbox — Shivam parked it; cleanest WTP yet, gated on niche size |
+| 5 | 2026-06-09 | LeagueDesk | Solo amateur sports league organizers | Killed — weak monetization, free WhatsApp/Sheets substitute |
 
 ---
 
 ## KILLED IDEAS
 | Run # | Date | Idea Name | Category | Reason |
 |-------|------|-----------|----------|--------|
+| 5 | 2026-06-09 | LeagueDesk | Amateur sports community ops | Weak monetization — hobbyist organizers run leagues for love not profit, and a free WhatsApp + Splitwise + Sheets stack is "good enough" for the small leagues that are most of the market |
 | 2 | 2026-06-07 | TrustLite | B2B Security/Compliance | Episodic pain — only felt when deal blocks, high churn after first use, not recurring SaaS |
 | 1 | 2026-06-06 | ShipNote | Dev-tool marketing | Vitamin not painkiller — guilt-based not fear-based, ChatGPT does 80% for free, persona-product mismatch on pivot |
 
@@ -47,6 +48,8 @@ Last run date: 2026-06-09
 | 1 | 2026-06-06 | PatchPilot | Weekly recurring pain, reachability moat, clear market gap vs Dependabot | Hotbox — revisit later |
 | 2 | 2026-06-07 | TrustLite | Domain advantage, clear market gap vs Vanta | Killed — episodic pain |
 | 1 | 2026-06-06 | ShipNote | Real time-sink, liked the voice-learning angle | Killed — vitamin not painkiller |
+| 5 | 2026-06-09 | ReplayCoach | Cleanest willingness-to-pay logic to date (time saved = more billable students) | Hotbox — parked, gated on niche size |
+| 5 | 2026-06-09 | LeagueDesk | Genuine weekly pain, near-zero platform risk | Killed — weak monetization, free substitute |
 
 ---
 
