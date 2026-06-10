@@ -128,6 +128,21 @@ Last run date: 2026-06-10
   branch, not main. Run #4 fast-forwarded main to recover that state
   before logging. Source of truth is main per CLAUDE.md.
 
+### Process note (Run #6):
+- Recurrence of the Run #3/#4 issue: Runs #3, #4, #5 (reports +
+  memory + sessions) were stranded on the claude/ branch and never
+  reached main. origin/main was 5 commits stale. Run #6
+  fast-forwarded main to recover Runs #3–6 and pushed. Main is now
+  the source of truth again. This stranding has now happened twice —
+  routine output keeps landing on the claude/ working branch instead
+  of main. Worth a permanent fix to the run harness.
+- EMAIL DELIVERY FAILED: SendGrid (api.sendgrid.com) returned HTTP
+  403 "Host not in allowlist" — this environment's network policy
+  blocks the host, so the email step cannot run here. Did not retry
+  (per STEP 5). GitHub main is the fallback channel. Either run the
+  email step from an environment whose network policy allows
+  SendGrid, or switch to an allowed delivery mechanism.
+
 ---
 
 ## WEEKLY SUMMARIES
