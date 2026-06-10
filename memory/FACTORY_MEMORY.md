@@ -1,19 +1,19 @@
 # FACTORY MEMORY — AI Validation Factory
-Last updated: 2026-06-09
-Total runs: 5
-Last run date: 2026-06-09
+Last updated: 2026-06-10
+Total runs: 6
+Last run date: 2026-06-10
 
 ---
 
 ## QUICK STATS
 | Metric | Count |
 |--------|-------|
-| Total runs | 5 |
-| Ideas generated | 10 |
+| Total runs | 6 |
+| Ideas generated | 12 |
 | Killed immediately | 4 |
 | Discussed | 6 |
 | Proceeded to validation | 0 |
-| Kill rate | 40% |
+| Kill rate | 33% |
 
 ---
 
@@ -30,6 +30,8 @@ Last run date: 2026-06-09
 | 4 | 2026-06-08 | ClientPulse | Solo marketing freelancers | Killed — crowded incumbent space |
 | 5 | 2026-06-09 | ReplayCoach | Solo esports coaches (Valorant/LoL/CS2) | Hotbox — Shivam parked it; cleanest WTP yet, gated on niche size |
 | 5 | 2026-06-09 | LeagueDesk | Solo amateur sports league organizers | Killed — weak monetization, free WhatsApp/Sheets substitute |
+| 6 | 2026-06-10 | ScopeGuard | Solo consultants / freelancers (agency-of-one) | Stronger pick — monitor-and-alert, awaiting discussion |
+| 6 | 2026-06-10 | MenuCost | Solo café / cloud-kitchen / catering operators | Hotbox candidate — reachability wall (offline persona) |
 
 ---
 
@@ -93,6 +95,17 @@ Last run date: 2026-06-09
   hammer. Force genuinely different mechanisms in upcoming runs
   (monitor-and-alert, ops-automation, data-extraction) so strength
   isn't an artifact of repetition.
+
+### Pattern-break (Run #6):
+- Both ideas this run deliberately avoid deliverable-drafting.
+  ScopeGuard = monitor-and-alert (scope-creep detection);
+  MenuCost = data-extraction + margin-alert. Mechanism diversity
+  restored. Stronger pick (ScopeGuard) still wins on the same axis
+  as before — recurring money-pain + reachable persona — confirming
+  the signal wasn't an artifact of the drafting hammer.
+- MenuCost hit the SAME offline-persona reachability wall as
+  PrepPilot (Run #4). Reachability of offline micro-operators is now
+  a repeat failure mode — pre-screen for it in Agent 1.
 
 ### What's working in ad copy (from Routine 3 results):
 - Too early to tell
