@@ -167,6 +167,16 @@ Last run date: 2026-06-11
   email step from an environment whose network policy allows
   SendGrid, or switch to an allowed delivery mechanism.
 
+### Process note (Run #7):
+- Branch fix held: Run #7 committed and pushed directly to main
+  (no stranding). Local main clone was stale at Run #2 state;
+  fast-forwarded to origin/main before pushing.
+- EMAIL DELIVERY FAILED again (Run #7): same SendGrid HTTP 403
+  "Host not in allowlist." Not retried per STEP 5. Until the
+  environment's network policy allowlists api.sendgrid.com, the
+  email step will fail every run; push notification + GitHub main
+  are the working delivery channels.
+
 ---
 
 ## WEEKLY SUMMARIES
