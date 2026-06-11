@@ -1,19 +1,19 @@
 # FACTORY MEMORY — AI Validation Factory
-Last updated: 2026-06-10
-Total runs: 6
-Last run date: 2026-06-10
+Last updated: 2026-06-11
+Total runs: 7
+Last run date: 2026-06-11
 
 ---
 
 ## QUICK STATS
 | Metric | Count |
 |--------|-------|
-| Total runs | 6 |
-| Ideas generated | 12 |
-| Killed immediately | 4 |
+| Total runs | 7 |
+| Ideas generated | 14 |
+| Killed immediately | 5 |
 | Discussed | 6 |
 | Proceeded to validation | 0 |
-| Kill rate | 33% |
+| Kill rate | 36% |
 
 ---
 
@@ -32,12 +32,15 @@ Last run date: 2026-06-10
 | 5 | 2026-06-09 | LeagueDesk | Solo amateur sports league organizers | Killed — weak monetization, free WhatsApp/Sheets substitute |
 | 6 | 2026-06-10 | ScopeGuard | Solo consultants / freelancers (agency-of-one) | Stronger pick — monitor-and-alert, awaiting discussion |
 | 6 | 2026-06-10 | MenuCost | Solo café / cloud-kitchen / catering operators | Hotbox candidate — reachability wall (offline persona) |
+| 7 | 2026-06-11 | MatchLoop | Independent professional matchmakers / dating coaches | Killed at stress test — incumbent parity + ~3k global TAM |
+| 7 | 2026-06-11 | DealGate | Creators / UGC freelancers (30k–500k followers) | Stronger pick — hotbox pending positioning vs free incumbents, awaiting discussion |
 
 ---
 
 ## KILLED IDEAS
 | Run # | Date | Idea Name | Category | Reason |
 |-------|------|-----------|----------|--------|
+| 7 | 2026-06-11 | MatchLoop | Dating-industry back office | Killed at stress test — claimed competitor gap was factually false (SmartMatchApp $30/mo already ships automated date scheduling), and total niche is ~2-3k matchmakers worldwide, so a 500-user launch needs ~20% of the profession; near-zero ad inventory for the persona |
 | 5 | 2026-06-09 | LeagueDesk | Amateur sports community ops | Weak monetization — hobbyist organizers run leagues for love not profit, and a free WhatsApp + Splitwise + Sheets stack is "good enough" for the small leagues that are most of the market |
 | 4 | 2026-06-08 | ClientPulse | Marketing analytics/reporting | Crowded incumbent category (AgencyAnalytics/Whatagraph/Looker Studio) — only wedge is "cheaper + AI voice," too thin for a 6wk/₹10k validation |
 | 2 | 2026-06-07 | TrustLite | B2B Security/Compliance | Episodic pain — only felt when deal blocks, high churn after first use, not recurring SaaS |
@@ -106,6 +109,27 @@ Last run date: 2026-06-10
 - MenuCost hit the SAME offline-persona reachability wall as
   PrepPilot (Run #4). Reachability of offline micro-operators is now
   a repeat failure mode — pre-screen for it in Agent 1.
+
+### Pattern-break (Run #7):
+- Two more fresh mechanisms: MatchLoop = two-sided coordination /
+  ops-automation; DealGate = intake/qualification/triage. Neither
+  drafting nor watch-and-ping. Mechanism diversity holding.
+- First use of personal-interest sub-domains dating (MatchLoop) and
+  social-media creators (DealGate). Creator persona = most
+  ad-reachable persona generated to date.
+- NEW FAILURE MODE: Agent 1 claimed a competitor gap that live web
+  verification disproved (SmartMatchApp already ships MatchLoop's
+  core loop, cheaper than Agent 1 claimed). Agent 2's web
+  fact-check caught it before any spend — keep mandatory competitor
+  verification in every future stress test.
+- Niche-size gating recurred (matchmakers ~2-3k worldwide, same
+  failure shape as esports coaches Run #5). Agent 1 should
+  pre-screen TAM: persona population must plausibly support a
+  500-user capped launch without owning >5% of the niche.
+- Backlog risk: Runs #6 and #7 stronger picks (ScopeGuard,
+  DealGate) both await discussion, plus ProgramPilot (Run #3)
+  still open. Undiscussed-leads queue is growing — surface to
+  Shivam rather than generating past it indefinitely.
 
 ### What's working in ad copy (from Routine 3 results):
 - Too early to tell
