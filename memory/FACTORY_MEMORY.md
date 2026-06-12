@@ -1,19 +1,19 @@
 # FACTORY MEMORY — AI Validation Factory
-Last updated: 2026-06-11
-Total runs: 7
-Last run date: 2026-06-11
+Last updated: 2026-06-12
+Total runs: 8
+Last run date: 2026-06-12
 
 ---
 
 ## QUICK STATS
 | Metric | Count |
 |--------|-------|
-| Total runs | 7 |
-| Ideas generated | 14 |
-| Killed immediately | 5 |
+| Total runs | 8 |
+| Ideas generated | 16 |
+| Killed immediately | 6 |
 | Discussed | 6 |
 | Proceeded to validation | 0 |
-| Kill rate | 36% |
+| Kill rate | 38% |
 
 ---
 
@@ -34,12 +34,15 @@ Last run date: 2026-06-11
 | 6 | 2026-06-10 | MenuCost | Solo café / cloud-kitchen / catering operators | Hotbox candidate — reachability wall (offline persona) |
 | 7 | 2026-06-11 | MatchLoop | Independent professional matchmakers / dating coaches | Killed at stress test — incumbent parity + ~3k global TAM |
 | 7 | 2026-06-11 | DealGate | Creators / UGC freelancers (30k–500k followers) | Stronger pick — hotbox pending positioning vs free incumbents, awaiting discussion |
+| 8 | 2026-06-12 | StaySignal | Solo paid-community operators (Skool/Circle/Discord) | Killed at stress test — Circle ships it natively, Skool niche tools exist, platform risk high |
+| 8 | 2026-06-12 | PolicyDiff | Solo fractional HR consultants (5–15 SMB clients, multi-state) | Stronger pick — verified $5k/yr→$39/mo price umbrella, gated on law-feed sourcing, awaiting discussion |
 
 ---
 
 ## KILLED IDEAS
 | Run # | Date | Idea Name | Category | Reason |
 |-------|------|-----------|----------|--------|
+| 8 | 2026-06-12 | StaySignal | Paid-community retention ops | Killed at stress test — live verification showed Circle already ships the core natively (Activity Scores, predictive churn, re-engagement workflows) and the Skool gap is filled by Skoot CRM + CommuniPass; product lives entirely on platform APIs while platforms visibly build the feature — a roadmap item, not a company |
 | 7 | 2026-06-11 | MatchLoop | Dating-industry back office | Killed at stress test — claimed competitor gap was factually false (SmartMatchApp $30/mo already ships automated date scheduling), and total niche is ~2-3k matchmakers worldwide, so a 500-user launch needs ~20% of the profession; near-zero ad inventory for the persona |
 | 5 | 2026-06-09 | LeagueDesk | Amateur sports community ops | Weak monetization — hobbyist organizers run leagues for love not profit, and a free WhatsApp + Splitwise + Sheets stack is "good enough" for the small leagues that are most of the market |
 | 4 | 2026-06-08 | ClientPulse | Marketing analytics/reporting | Crowded incumbent category (AgencyAnalytics/Whatagraph/Looker Studio) — only wedge is "cheaper + AI voice," too thin for a 6wk/₹10k validation |
@@ -131,6 +134,24 @@ Last run date: 2026-06-11
   still open. Undiscussed-leads queue is growing — surface to
   Shivam rather than generating past it indefinitely.
 
+### Pattern-break (Run #8):
+- Two more fresh mechanisms: StaySignal = retention/lifecycle
+  intervention (detect-then-act, not just alert); PolicyDiff =
+  regulatory-diff → per-client impact mapping. Mechanism diversity
+  holding for a third consecutive run.
+- Mandatory live competitor verification killed its second idea in
+  two runs (StaySignal, after MatchLoop) — both on "platform/incumbent
+  already ships it." The check is earning its place; keep it.
+- New screen worth adding to Agent 1: if the product's data lives
+  entirely inside one platform's API AND the platform monetizes the
+  same operator, assume the platform builds it natively (Circle did).
+- PolicyDiff = first idea where the incumbent's own pricing proves
+  the persona budget ($5,000/yr SixFifty consultant tier) rather than
+  inferring willingness to pay. Strongest WTP evidence to date.
+- Undiscussed-leads queue now 3 deep (ProgramPilot #3, ScopeGuard #6,
+  DealGate #7) + PolicyDiff today. Flagged in report as needing a
+  single 30-min triage session rather than per-run re-flagging.
+
 ### What's working in ad copy (from Routine 3 results):
 - Too early to tell
 
@@ -176,6 +197,14 @@ Last run date: 2026-06-11
   environment's network policy allowlists api.sendgrid.com, the
   email step will fail every run; push notification + GitHub main
   are the working delivery channels.
+
+### Process note (Run #8):
+- Pushed directly to main, no stranding (second clean run in a row).
+- EMAIL DELIVERY FAILED again (3rd consecutive run): SendGrid HTTP
+  403 "Host not in allowlist." Not retried per STEP 5. This will
+  fail every run until api.sendgrid.com is added to the
+  environment's network egress allowlist — push notification +
+  GitHub main remain the delivery channels.
 
 ---
 
