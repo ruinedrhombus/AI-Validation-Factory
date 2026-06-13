@@ -180,6 +180,14 @@ Last run date: 2026-06-13
   the hotbox with a cheap, pre-build kill question (20 forum
   interviews, zero spend).
 
+### Process note (Run #9):
+- Pushed directly to main, no stranding (third clean run in a row).
+- EMAIL DELIVERY FAILED again (4th consecutive run): SendGrid HTTP
+  403 "Host not in allowlist." Not retried per STEP 5. Unchanged
+  diagnosis: api.sendgrid.com must be added to the environment's
+  network egress allowlist or the delivery mechanism switched —
+  push notification + GitHub main remain the working channels.
+
 ### What's working in ad copy (from Routine 3 results):
 - Too early to tell
 
