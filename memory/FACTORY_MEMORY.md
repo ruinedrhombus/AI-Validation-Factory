@@ -1,19 +1,19 @@
 # FACTORY MEMORY — AI Validation Factory
-Last updated: 2026-06-12
-Total runs: 8
-Last run date: 2026-06-12
+Last updated: 2026-06-13
+Total runs: 9
+Last run date: 2026-06-13
 
 ---
 
 ## QUICK STATS
 | Metric | Count |
 |--------|-------|
-| Total runs | 8 |
-| Ideas generated | 16 |
-| Killed immediately | 6 |
+| Total runs | 9 |
+| Ideas generated | 18 |
+| Killed immediately | 7 |
 | Discussed | 6 |
 | Proceeded to validation | 0 |
-| Kill rate | 38% |
+| Kill rate | 39% |
 
 ---
 
@@ -36,12 +36,15 @@ Last run date: 2026-06-12
 | 7 | 2026-06-11 | DealGate | Creators / UGC freelancers (30k–500k followers) | Stronger pick — hotbox pending positioning vs free incumbents, awaiting discussion |
 | 8 | 2026-06-12 | StaySignal | Solo paid-community operators (Skool/Circle/Discord) | Killed at stress test — Circle ships it natively, Skool niche tools exist, platform risk high |
 | 8 | 2026-06-12 | PolicyDiff | Solo fractional HR consultants (5–15 SMB clients, multi-state) | Stronger pick — verified $5k/yr→$39/mo price umbrella, gated on law-feed sourcing, awaiting discussion |
+| 9 | 2026-06-13 | CommissionHound | Solo home-based independent travel advisors (host-agency ICs) | Hotbox — verified money-pain, gated on one kill question: % of advisors who can chase suppliers directly vs host-routed / Tern-covered |
+| 9 | 2026-06-13 | CastRadar | Semi-pro freelance voice actors (home studio) | Killed at stress test — supply sources prohibit scraping, Cast Me Now undercuts at $3–8/mo, lowest-WTP segment |
 
 ---
 
 ## KILLED IDEAS
 | Run # | Date | Idea Name | Category | Reason |
 |-------|------|-----------|----------|--------|
+| 9 | 2026-06-13 | CastRadar | Casting-call aggregation for voice actors | Killed at stress test — entire inventory comes from sources that prohibit automated collection (Backstage ToS scraping ban, Discord enforcement precedent, X API economics); Cast Me Now already ships fit-ranked daily-digest aggregation with auto-submit at $3–8/mo; target segment (CCC/Discord semi-pros) is the lowest-WTP slice in VO; concierge validation would be a false-positive machine because the tested product can't legally scale |
 | 8 | 2026-06-12 | StaySignal | Paid-community retention ops | Killed at stress test — live verification showed Circle already ships the core natively (Activity Scores, predictive churn, re-engagement workflows) and the Skool gap is filled by Skoot CRM + CommuniPass; product lives entirely on platform APIs while platforms visibly build the feature — a roadmap item, not a company |
 | 7 | 2026-06-11 | MatchLoop | Dating-industry back office | Killed at stress test — claimed competitor gap was factually false (SmartMatchApp $30/mo already ships automated date scheduling), and total niche is ~2-3k matchmakers worldwide, so a 500-user launch needs ~20% of the profession; near-zero ad inventory for the persona |
 | 5 | 2026-06-09 | LeagueDesk | Amateur sports community ops | Weak monetization — hobbyist organizers run leagues for love not profit, and a free WhatsApp + Splitwise + Sheets stack is "good enough" for the small leagues that are most of the market |
@@ -152,6 +155,31 @@ Last run date: 2026-06-12
   DealGate #7) + PolicyDiff today. Flagged in report as needing a
   single 30-min triage session rather than per-run re-flagging.
 
+### Pattern-break (Run #9):
+- Two more fresh mechanisms: CommissionHound = reconciliation
+  (expected-vs-received matching) + evidence-assembly chase;
+  CastRadar = multi-source aggregation + dedup + profile matching.
+  Mechanism diversity holding for a fourth consecutive run.
+- THIRD consecutive run where Agent 1's "no incumbent" claim failed
+  live verification (SmartMatchApp #7, Circle #8, now Fora +
+  Cast Me Now #9). Agent 2's mandatory check caught all three.
+  NEW STANDING RULE added below: Agent 1 must name and link the
+  closest existing product per idea, with the gap stated as a
+  falsifiable sentence, before submission.
+- NEW KILL CRITERION surfaced by CastRadar: supply-side legality.
+  If an aggregator's inventory comes from sources whose ToS prohibit
+  automated collection, a concierge MVP validates a product that
+  cannot legally scale — a false-positive machine. Screen for
+  "is the data legally collectable at scale?" at ideation time.
+- CommissionHound = second idea (after PolicyDiff) where incumbent
+  pricing proves the persona budget (Tern $39/mo, TESS $25/mo).
+  Persona-budget-by-incumbent-pricing is becoming the strongest
+  WTP evidence pattern.
+- Undiscussed-leads queue unchanged at 4 (ProgramPilot #3,
+  ScopeGuard #6, DealGate #7, PolicyDiff #8); CommissionHound joins
+  the hotbox with a cheap, pre-build kill question (20 forum
+  interviews, zero spend).
+
 ### What's working in ad copy (from Routine 3 results):
 - Too early to tell
 
@@ -167,6 +195,12 @@ Last run date: 2026-06-12
   more billable students). Gated on one question: is the niche of
   solo esports coaches with paying rosters big enough? Validate
   audience size before any build decision.
+- CommissionHound (Run #9, hotbox) — verified recurring money-pain
+  for solo travel advisors. Gated on one kill question answerable
+  with ~20 forum interviews, zero build: what % of target advisors
+  can chase suppliers directly (vs host-routed commissions), and
+  are they already on Tern/TESS? If >half host-routed or
+  Tern-covered, kill.
 
 ### Process note (Run #4):
 - Run #3 report/memory had been committed to the claude/ working
@@ -223,13 +257,25 @@ Last run date: 2026-06-12
 ## STANDING INSTRUCTIONS FOR NEXT RUN
 
 ### Agent 1 — avoid these categories:
--
+- Aggregators whose supply comes from ToS-protected sources
+  (scraping-prohibited platforms) — see CastRadar kill, Run #9
+
+### Agent 1 — new mandatory rule (from Run #9):
+- Before submitting an idea, name and LINK the closest existing
+  product, and state the gap as a single falsifiable sentence
+  (e.g. "X does A and B but not C for persona P at price Q").
+  Three consecutive runs had a "no incumbent" claim disproved by
+  Agent 2's live verification (SmartMatchApp, Circle, Fora +
+  Cast Me Now).
 
 ### Agent 1 — lean toward these personas:
 -
 
 ### Open questions to explore:
--
+- CommissionHound kill question: % of solo travel advisors who can
+  chase suppliers directly vs host-routed; Tern/TESS penetration
+- Undiscussed-leads triage: ProgramPilot, ScopeGuard, DealGate,
+  PolicyDiff still await a single 30-min triage session
 
 ### Notes from Shivam:
 -
