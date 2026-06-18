@@ -1,19 +1,19 @@
 # FACTORY MEMORY — AI Validation Factory
-Last updated: 2026-06-13
-Total runs: 9
-Last run date: 2026-06-13
+Last updated: 2026-06-18
+Total runs: 10
+Last run date: 2026-06-18
 
 ---
 
 ## QUICK STATS
 | Metric | Count |
 |--------|-------|
-| Total runs | 9 |
-| Ideas generated | 18 |
-| Killed immediately | 7 |
+| Total runs | 10 |
+| Ideas generated | 20 |
+| Killed immediately | 9 |
 | Discussed | 6 |
 | Proceeded to validation | 0 |
-| Kill rate | 39% |
+| Kill rate | 45% |
 
 ---
 
@@ -38,12 +38,16 @@ Last run date: 2026-06-13
 | 8 | 2026-06-12 | PolicyDiff | Solo fractional HR consultants (5–15 SMB clients, multi-state) | Stronger pick — verified $5k/yr→$39/mo price umbrella, gated on law-feed sourcing, awaiting discussion |
 | 9 | 2026-06-13 | CommissionHound | Solo home-based independent travel advisors (host-agency ICs) | Hotbox — verified money-pain, gated on one kill question: % of advisors who can chase suppliers directly vs host-routed / Tern-covered |
 | 9 | 2026-06-13 | CastRadar | Semi-pro freelance voice actors (home studio) | Killed at stress test — supply sources prohibit scraping, Cast Me Now undercuts at $3–8/mo, lowest-WTP segment |
+| 10 | 2026-06-18 | PeakDate | Solo monetizing food bloggers / recipe developers | Killed at stress test — mechanism is free common knowledge (RankIQ/Yoast teach "publish 3mo early"), no defensible core, serious-blogger TAM ~5k too small, fragile Trends API |
+| 10 | 2026-06-18 | FirstMover | Solo freelance web/brand designers ($2–8k projects) | Killed at stress test — no legal structured local-SMB trigger feed (signal lives on ToS-blocked LinkedIn); Owler $35 owns startup-trigger space; ideator's LeadLens comp was wrong (ad service, not trigger SaaS) |
 
 ---
 
 ## KILLED IDEAS
 | Run # | Date | Idea Name | Category | Reason |
 |-------|------|-----------|----------|--------|
+| 10 | 2026-06-18 | PeakDate | Seasonal publish-timing for food bloggers | Killed at stress test — the core "publish ~3 months before the season" is free, universally-taught knowledge (RankIQ, Yoast, WP Tasty, Food Blogger Pro), so there is no proprietary computation to sell; serious monetizing-blogger TAM is ~5k (75% earn $0), too small for a 500-cap launch without ~10% share; Google Trends shows the curve free and the Trends API is alpha/throttled, making the data layer fragile inside 6wk/₹10k; a vitamin, not a painkiller |
+| 10 | 2026-06-18 | FirstMover | Trigger-based prospecting for service freelancers | Killed at stress test — fatal supply gap: the persona sells to LOCAL SMBs but the only clean free structured trigger feeds (StrictlyVC, Crunchbase Daily, BusinessWire) cover VC-backed startups (wrong buyer), and the local-SMB "new lease/growth-hire" signal lives on ToS-blocked LinkedIn; Owler Pro ($35/mo) already ships funding/M&A alerts and Apollo free tier + Google Alerts cover the cheap end; ideator mischaracterized LeadLens (an ad-management service, NOT a trigger SaaS) so its WTP claim was invalid |
 | 9 | 2026-06-13 | CastRadar | Casting-call aggregation for voice actors | Killed at stress test — entire inventory comes from sources that prohibit automated collection (Backstage ToS scraping ban, Discord enforcement precedent, X API economics); Cast Me Now already ships fit-ranked daily-digest aggregation with auto-submit at $3–8/mo; target segment (CCC/Discord semi-pros) is the lowest-WTP slice in VO; concierge validation would be a false-positive machine because the tested product can't legally scale |
 | 8 | 2026-06-12 | StaySignal | Paid-community retention ops | Killed at stress test — live verification showed Circle already ships the core natively (Activity Scores, predictive churn, re-engagement workflows) and the Skool gap is filled by Skoot CRM + CommuniPass; product lives entirely on platform APIs while platforms visibly build the feature — a roadmap item, not a company |
 | 7 | 2026-06-11 | MatchLoop | Dating-industry back office | Killed at stress test — claimed competitor gap was factually false (SmartMatchApp $30/mo already ships automated date scheduling), and total niche is ~2-3k matchmakers worldwide, so a 500-user launch needs ~20% of the profession; near-zero ad inventory for the persona |
@@ -180,6 +184,47 @@ Last run date: 2026-06-13
   the hotbox with a cheap, pre-build kill question (20 forum
   interviews, zero spend).
 
+### Pattern-break (Run #10):
+- Two fresh mechanisms again: PeakDate = backward-dated deadline
+  tracking from external demand peaks; FirstMover = trigger-based
+  prospecting / lead-gen. Neither drafting, alerting-on-own-data,
+  reconciliation, nor aggregation. Mechanism diversity holding for a
+  FIFTH consecutive run.
+- FOURTH consecutive run where Agent 1's incumbent framing failed live
+  verification (SmartMatchApp #7, Circle #8, Fora+CastMeNow #9, now
+  PeakDate "no tool does this" = free common knowledge + RankIQ/Keysearch
+  bundles, and FirstMover's LeadLens comp = an ad-management service, not
+  a trigger SaaS). The mandatory name-and-link rule is now load-bearing;
+  Agent 2's check has killed or corrected an idea every run since #7.
+- NEW KILL PATTERN surfaced by PeakDate: "productized common knowledge."
+  If the core logic is a free, widely-taught rule of thumb (the deadline
+  is deterministic public knowledge), there is no defensible core no
+  matter how real the pain. Screen at ideation: "is the value the
+  computation, or just a reminder of a known rule?"
+- NEW KILL PATTERN reinforced by FirstMover: "the right buyer has no
+  legal data feed." Trigger/intent products only work where the trigger
+  is published in a structured, legally-collectable source for the EXACT
+  buyer. Startup-funding feeds exist; local-SMB life-event signals do
+  not (they live on LinkedIn = ToS-blocked). Pre-screen trigger ideas:
+  name the specific public feed that carries the signal for the actual
+  persona — if it's "LinkedIn," kill at ideation.
+- Both ideas killed at stress test — first run with a 2/2 kill since the
+  factory began. Kill rate up to 45%. Quality of kills is high (caught
+  pre-spend), but two consecutive low-yield runs (#9 1/2 hotbox, #10 0/2)
+  suggest the ideator is reaching. The undiscussed-leads queue (4 deep)
+  is now more valuable than net-new ideation — see below.
+
+### Process note (Run #10):
+- Pushed directly to main (clean run, no stranding — fourth in a row).
+- Ideator continues to overclaim competitive gaps; keep Agent 2's live
+  competitor verification mandatory and weight it heavily in the verdict.
+- BACKLOG ESCALATION: two consecutive runs produced effectively no new
+  hotbox candidates. The undiscussed-leads queue (ProgramPilot #3 still
+  -active, ScopeGuard #6, DealGate #7, PolicyDiff #8) plus hotbox
+  (PatchPilot, PrepPilot, ReplayCoach, CommissionHound) is now the
+  highest-value next action — a single triage session beats more
+  net-new ideation. Surfaced to Shivam via push notification this run.
+
 ### Process note (Run #9):
 - Pushed directly to main, no stranding (third clean run in a row).
 - EMAIL DELIVERY FAILED again (4th consecutive run): SendGrid HTTP
@@ -267,6 +312,14 @@ Last run date: 2026-06-13
 ### Agent 1 — avoid these categories:
 - Aggregators whose supply comes from ToS-protected sources
   (scraping-prohibited platforms) — see CastRadar kill, Run #9
+- "Productized common knowledge" — products whose core logic is a free,
+  widely-taught rule of thumb (deterministic public knowledge), see
+  PeakDate kill, Run #10. The value must be the computation/data, not a
+  reminder of a known rule.
+- Trigger/intent products where the signal for the EXACT buyer has no
+  legal structured public feed (lives on LinkedIn = ToS-blocked), see
+  FirstMover kill, Run #10. Before proposing, name the specific public
+  feed carrying the trigger for the actual persona; if it's LinkedIn, kill.
 
 ### Agent 1 — new mandatory rule (from Run #9):
 - Before submitting an idea, name and LINK the closest existing
@@ -284,6 +337,15 @@ Last run date: 2026-06-13
   chase suppliers directly vs host-routed; Tern/TESS penetration
 - Undiscussed-leads triage: ProgramPilot, ScopeGuard, DealGate,
   PolicyDiff still await a single 30-min triage session
+
+### PRIORITY for next run (escalated Run #10):
+- Two consecutive low-yield runs (#9 1/2, #10 0/2). Before generating
+  more net-new ideas, push Shivam to run ONE triage session on the
+  existing queue — it now holds more validated potential than fresh
+  ideation. Queue: hotbox = PatchPilot, PrepPilot, ReplayCoach,
+  CommissionHound; undiscussed = ProgramPilot (#3 -active), ScopeGuard
+  (#6), DealGate (#7), PolicyDiff (#8). PolicyDiff has the strongest
+  WTP evidence to date ($5k/yr incumbent tier).
 
 ### Notes from Shivam:
 -
