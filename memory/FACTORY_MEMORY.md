@@ -1,19 +1,19 @@
 # FACTORY MEMORY — AI Validation Factory
-Last updated: 2026-06-18
-Total runs: 10
-Last run date: 2026-06-18
+Last updated: 2026-06-19
+Total runs: 11
+Last run date: 2026-06-19
 
 ---
 
 ## QUICK STATS
 | Metric | Count |
 |--------|-------|
-| Total runs | 10 |
-| Ideas generated | 20 |
-| Killed immediately | 9 |
+| Total runs | 11 |
+| Ideas generated | 22 |
+| Killed immediately | 11 |
 | Discussed | 6 |
 | Proceeded to validation | 0 |
-| Kill rate | 45% |
+| Kill rate | 50% |
 
 ---
 
@@ -40,12 +40,16 @@ Last run date: 2026-06-18
 | 9 | 2026-06-13 | CastRadar | Semi-pro freelance voice actors (home studio) | Killed at stress test — supply sources prohibit scraping, Cast Me Now undercuts at $3–8/mo, lowest-WTP segment |
 | 10 | 2026-06-18 | PeakDate | Solo monetizing food bloggers / recipe developers | Killed at stress test — mechanism is free common knowledge (RankIQ/Yoast teach "publish 3mo early"), no defensible core, serious-blogger TAM ~5k too small, fragile Trends API |
 | 10 | 2026-06-18 | FirstMover | Solo freelance web/brand designers ($2–8k projects) | Killed at stress test — no legal structured local-SMB trigger feed (signal lives on ToS-blocked LinkedIn); Owler $35 owns startup-trigger space; ideator's LeadLens comp was wrong (ad service, not trigger SaaS) |
+| 11 | 2026-06-19 | MarkGuard | Solo print-on-demand / Etsy sellers | Killed at stress test — exact product ships FREE (Merch Titans per-word real-time USPTO clearance, 25 scans/day); Amazon Merch already screens TM at upload; the one feature, given away free inside $29.99 suites |
+| 11 | 2026-06-19 | FormFlag | Solo online fitness/strength coaches (20–60 remote clients) | Killed at stress test — Gymscore.ai already ships coach-facing batch CV form triage with identical "save 7–12 hrs/wk" pitch; single-camera CV misses ~1/3 of faults + over-flags so time-savings collapse; Sency/Kemtai SDKs make it a 1-update platform feature |
 
 ---
 
 ## KILLED IDEAS
 | Run # | Date | Idea Name | Category | Reason |
 |-------|------|-----------|----------|--------|
+| 11 | 2026-06-19 | MarkGuard | Trademark clearance for POD/Etsy sellers | Killed at stress test — the exact product (real-time, per-word, USPTO-backed, risk-scored POD clearance) already ships FREE via Merch Titans (25 scans/day no-account, unlimited with free account), plus isCompliant and bundled in Merch Informer; Amazon Merch already screens trademarks at upload (platform IS the screen); USPTO data is the very asset incumbents already built and give away; no room to charge $20/mo for a free single-feature |
+| 11 | 2026-06-19 | FormFlag | CV form-check triage for fitness coaches | Killed at stress test — Gymscore.ai ships the identical coach-facing batch form-triage product and pitch ("save 7–12 hrs/wk", flagged-issues dashboard, correction cues); core accuracy is structurally too weak (2024–25 validation: single-camera CV misses ~1/3 of clinically meaningful faults and over-flags high-BMI/mobility-limited users), so coach re-reviews anyway and the time-savings premise collapses; Sency/Kemtai CV SDKs (1-day integration) let Trainerize/TrueCoach ship it natively = high platform risk |
 | 10 | 2026-06-18 | PeakDate | Seasonal publish-timing for food bloggers | Killed at stress test — the core "publish ~3 months before the season" is free, universally-taught knowledge (RankIQ, Yoast, WP Tasty, Food Blogger Pro), so there is no proprietary computation to sell; serious monetizing-blogger TAM is ~5k (75% earn $0), too small for a 500-cap launch without ~10% share; Google Trends shows the curve free and the Trends API is alpha/throttled, making the data layer fragile inside 6wk/₹10k; a vitamin, not a painkiller |
 | 10 | 2026-06-18 | FirstMover | Trigger-based prospecting for service freelancers | Killed at stress test — fatal supply gap: the persona sells to LOCAL SMBs but the only clean free structured trigger feeds (StrictlyVC, Crunchbase Daily, BusinessWire) cover VC-backed startups (wrong buyer), and the local-SMB "new lease/growth-hire" signal lives on ToS-blocked LinkedIn; Owler Pro ($35/mo) already ships funding/M&A alerts and Apollo free tier + Google Alerts cover the cheap end; ideator mischaracterized LeadLens (an ad-management service, NOT a trigger SaaS) so its WTP claim was invalid |
 | 9 | 2026-06-13 | CastRadar | Casting-call aggregation for voice actors | Killed at stress test — entire inventory comes from sources that prohibit automated collection (Backstage ToS scraping ban, Discord enforcement precedent, X API economics); Cast Me Now already ships fit-ranked daily-digest aggregation with auto-submit at $3–8/mo; target segment (CCC/Discord semi-pros) is the lowest-WTP slice in VO; concierge validation would be a false-positive machine because the tested product can't legally scale |
@@ -214,6 +218,46 @@ Last run date: 2026-06-18
   suggest the ideator is reaching. The undiscussed-leads queue (4 deep)
   is now more valuable than net-new ideation — see below.
 
+### Pattern-break (Run #11):
+- Two fresh mechanisms again: MarkGuard = IP-clearance check against a legal
+  public DB (USPTO); FormFlag = computer-vision form-QC / correction triage.
+  Neither drafting, alerting, reconciliation, aggregation, nor trigger-gen.
+  Mechanism diversity holding for a SIXTH consecutive run.
+- FIFTH consecutive run where Agent 1's incumbent framing failed live
+  verification (SmartMatchApp #7, Circle #8, Fora+CastMeNow #9, RankIQ+LeadLens
+  #10, now Merch Titans #11 ships MarkGuard FREE + Gymscore.ai ships FormFlag's
+  exact coach pitch). The mandatory name-and-link rule keeps catching it; the
+  ideator's "no/weak incumbent" instinct is now unreliable by default — treat
+  every gap claim as false until Agent 2 proves otherwise.
+- SECOND consecutive 2/2 kill run (#10 0/2, #11 0/2), and THIRD low-yield run
+  in a row (#9 1/2). Kill rate now 50%. Kills remain high-quality (caught
+  pre-spend), but net-new ideation has produced zero hotbox candidates in two
+  runs. The ideator is reaching — confirmed, not a blip.
+- NEW KILL PATTERN reinforced by MarkGuard: "free incumbent + platform is the
+  screen." When the persona's pain is gatekept by a platform that already runs
+  the check at the gate (Amazon Merch screens TM at upload) AND a free tool
+  already mirrors it, there is no paid wedge. Screen at ideation: "does the
+  platform already perform this check as a condition of publishing?"
+- NEW KILL PATTERN reinforced by FormFlag: "mechanism not accurate enough to
+  deliver the promised time-saving." If the core is probabilistic (CV/ML) and
+  current accuracy forces the user to redo the work to catch misses, the
+  headline benefit (hours saved) is illusory regardless of incumbent. Screen
+  AI-perception ideas for: "is the model good enough that the user can trust
+  the output WITHOUT re-checking?" If no, the value prop is fake.
+
+### Process note (Run #11):
+- Pushed directly to main (clean run, no stranding — fifth in a row).
+- EMAIL DELIVERY: attempted per STEP 5, expected SendGrid HTTP 403 "Host not in
+  allowlist" (6th+ consecutive run blocked). Not retried. Push notification +
+  GitHub main remain the working delivery channels.
+- BACKLOG ESCALATION (repeat, now firmer): three consecutive low-yield runs.
+  The existing queue holds more validated potential than fresh ideation.
+  RECOMMENDATION carried into next run: pause net-new ideation for ONE run and
+  run a single 30-min triage session. Highest-leverage targets: PolicyDiff (#8,
+  strongest WTP evidence — $5k/yr incumbent tier) and CommissionHound (#9, one
+  ~20-interview zero-build kill question). ProgramPilot (#3) still -active and
+  should be discussed or formally closed. Surfaced to Shivam via push this run.
+
 ### Process note (Run #10):
 - Pushed directly to main (clean run, no stranding — fourth in a row).
 - Ideator continues to overclaim competitive gaps; keep Agent 2's live
@@ -320,6 +364,14 @@ Last run date: 2026-06-18
   legal structured public feed (lives on LinkedIn = ToS-blocked), see
   FirstMover kill, Run #10. Before proposing, name the specific public
   feed carrying the trigger for the actual persona; if it's LinkedIn, kill.
+- "Free incumbent + platform-as-screen" — pain gatekept by a platform that
+  already runs the check at publish/upload AND mirrored by a free tool, see
+  MarkGuard kill, Run #11. Screen: "does the platform already perform this
+  check as a condition of publishing?" If yes, no paid wedge.
+- "Probabilistic mechanism too inaccurate to deliver the promised saving" —
+  a CV/ML core whose current accuracy forces the user to re-check the output,
+  making the hours-saved headline fake, see FormFlag kill, Run #11. Screen:
+  "is the model good enough to TRUST without re-verifying?" If no, kill.
 
 ### Agent 1 — new mandatory rule (from Run #9):
 - Before submitting an idea, name and LINK the closest existing
@@ -338,14 +390,18 @@ Last run date: 2026-06-18
 - Undiscussed-leads triage: ProgramPilot, ScopeGuard, DealGate,
   PolicyDiff still await a single 30-min triage session
 
-### PRIORITY for next run (escalated Run #10):
-- Two consecutive low-yield runs (#9 1/2, #10 0/2). Before generating
-  more net-new ideas, push Shivam to run ONE triage session on the
-  existing queue — it now holds more validated potential than fresh
-  ideation. Queue: hotbox = PatchPilot, PrepPilot, ReplayCoach,
-  CommissionHound; undiscussed = ProgramPilot (#3 -active), ScopeGuard
-  (#6), DealGate (#7), PolicyDiff (#8). PolicyDiff has the strongest
-  WTP evidence to date ($5k/yr incumbent tier).
+### PRIORITY for next run (re-escalated Run #11 — now FIRM):
+- THREE consecutive low-yield runs (#9 1/2, #10 0/2, #11 0/2); net-new
+  ideation has produced zero hotbox candidates in two straight runs.
+  RECOMMENDATION: pause net-new ideation for ONE run and run a single
+  30-min triage session on the existing queue — it now clearly holds more
+  validated potential than fresh ideas. Queue: hotbox = PatchPilot, PrepPilot,
+  ReplayCoach, CommissionHound; undiscussed = ProgramPilot (#3 -active),
+  ScopeGuard (#6), DealGate (#7), PolicyDiff (#8).
+- Highest-leverage two: PolicyDiff (#8, strongest WTP evidence to date —
+  $5k/yr incumbent tier) and CommissionHound (#9, one ~20-interview zero-build
+  kill question). ProgramPilot (#3) still -active across 8 runs — discuss or
+  formally close.
 
 ### Notes from Shivam:
 -
