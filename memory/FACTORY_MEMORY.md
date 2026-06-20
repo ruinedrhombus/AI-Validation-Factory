@@ -1,19 +1,19 @@
 # FACTORY MEMORY — AI Validation Factory
-Last updated: 2026-06-19
-Total runs: 11
-Last run date: 2026-06-19
+Last updated: 2026-06-20
+Total runs: 12
+Last run date: 2026-06-20
 
 ---
 
 ## QUICK STATS
 | Metric | Count |
 |--------|-------|
-| Total runs | 11 |
-| Ideas generated | 22 |
-| Killed immediately | 11 |
+| Total runs | 12 |
+| Ideas generated | 24 |
+| Killed immediately | 13 |
 | Discussed | 6 |
 | Proceeded to validation | 0 |
-| Kill rate | 50% |
+| Kill rate | 54% |
 
 ---
 
@@ -42,12 +42,16 @@ Last run date: 2026-06-19
 | 10 | 2026-06-18 | FirstMover | Solo freelance web/brand designers ($2–8k projects) | Killed at stress test — no legal structured local-SMB trigger feed (signal lives on ToS-blocked LinkedIn); Owler $35 owns startup-trigger space; ideator's LeadLens comp was wrong (ad service, not trigger SaaS) |
 | 11 | 2026-06-19 | MarkGuard | Solo print-on-demand / Etsy sellers | Killed at stress test — exact product ships FREE (Merch Titans per-word real-time USPTO clearance, 25 scans/day); Amazon Merch already screens TM at upload; the one feature, given away free inside $29.99 suites |
 | 11 | 2026-06-19 | FormFlag | Solo online fitness/strength coaches (20–60 remote clients) | Killed at stress test — Gymscore.ai already ships coach-facing batch CV form triage with identical "save 7–12 hrs/wk" pitch; single-camera CV misses ~1/3 of faults + over-flags so time-savings collapse; Sency/Kemtai SDKs make it a 1-update platform feature |
+| 12 | 2026-06-20 | GrantMatch | Solo freelance grant writers (4–8 small-nonprofit clients) | Killed at stress test — Vee's "Grant" AI agent already ships discovery + RFP extraction + multi-client pipeline + voice-learning ($349–835/mo); discovery commoditized free (Grants.gov, OpenGrants, GrantWatch ~$18); no defensible $29 middle |
+| 12 | 2026-06-20 | CakeQuote | Solo home-based custom-cake bakers (10–25 orders/wk via Instagram DMs) | Killed at stress test — Bakesy ($10/mo) ships the exact product and markets "move off Instagram DMs" with auto-capture order forms; CakeBoss $15, BakeProfit free, Bake Diary cover same workflow; free Google Forms+Sheets is good enough below ~25 orders/wk |
 
 ---
 
 ## KILLED IDEAS
 | Run # | Date | Idea Name | Category | Reason |
 |-------|------|-----------|----------|--------|
+| 12 | 2026-06-20 | GrantMatch | Grant discovery + RFP extraction for freelance grant writers | Killed at stress test — Vee's "Grant" AI agent already ships the full workflow (finds opportunities + extracts requirements + manages multi-client pipeline + learns voice, $349–835/mo); the discovery layer is commoditized free (Grants.gov, OpenGrants) or cheap (GrantWatch ~$18/mo) and drafting/extraction is a ChatGPT prompt; Instrumentl/Grantable/Grant Assistant all racing to bundle the freelancer angle — incumbent product on one end, free public tools on the other, no defensible $29 middle |
+| 12 | 2026-06-20 | CakeQuote | Order/quote intake for home-based custom-cake bakers | Killed at stress test — Bakesy ($10/mo) ships the exact product and literally markets "move off Instagram DMs" with shareable order forms auto-capturing flavor/size/date/photos; CakeBoss ($15), BakeProfit (free), Bake Diary, Castiron (free) cover the same workflow; free Google Forms + Sheets is "good enough" below ~25 orders/wk, which is most of the persona; cheaper purpose-built incumbent on one side, free stack on the other, no room to charge more for a clone |
 | 11 | 2026-06-19 | MarkGuard | Trademark clearance for POD/Etsy sellers | Killed at stress test — the exact product (real-time, per-word, USPTO-backed, risk-scored POD clearance) already ships FREE via Merch Titans (25 scans/day no-account, unlimited with free account), plus isCompliant and bundled in Merch Informer; Amazon Merch already screens trademarks at upload (platform IS the screen); USPTO data is the very asset incumbents already built and give away; no room to charge $20/mo for a free single-feature |
 | 11 | 2026-06-19 | FormFlag | CV form-check triage for fitness coaches | Killed at stress test — Gymscore.ai ships the identical coach-facing batch form-triage product and pitch ("save 7–12 hrs/wk", flagged-issues dashboard, correction cues); core accuracy is structurally too weak (2024–25 validation: single-camera CV misses ~1/3 of clinically meaningful faults and over-flags high-BMI/mobility-limited users), so coach re-reviews anyway and the time-savings premise collapses; Sency/Kemtai CV SDKs (1-day integration) let Trainerize/TrueCoach ship it natively = high platform risk |
 | 10 | 2026-06-18 | PeakDate | Seasonal publish-timing for food bloggers | Killed at stress test — the core "publish ~3 months before the season" is free, universally-taught knowledge (RankIQ, Yoast, WP Tasty, Food Blogger Pro), so there is no proprietary computation to sell; serious monetizing-blogger TAM is ~5k (75% earn $0), too small for a 500-cap launch without ~10% share; Google Trends shows the curve free and the Trends API is alpha/throttled, making the data layer fragile inside 6wk/₹10k; a vitamin, not a painkiller |
@@ -245,6 +249,27 @@ Last run date: 2026-06-19
   AI-perception ideas for: "is the model good enough that the user can trust
   the output WITHOUT re-checking?" If no, the value prop is fake.
 
+### Pattern-break (Run #12):
+- Mechanism diversity BROKE for the first time in 7 runs: GrantMatch = matching +
+  RFP requirement-extraction (= aggregation/extraction, cf. CastRadar/PolicyDiff);
+  CakeQuote = order/quote intake (= DealGate's intake/triage). The ideator is now
+  recycling mechanisms, not inventing them — a direct symptom of being tapped out.
+- SIXTH consecutive run where Agent 1's incumbent framing failed live verification
+  (SmartMatchApp #7, Circle #8, Fora+CastMeNow #9, RankIQ+LeadLens #10, MerchTitans
+  +Gymscore #11, now Vee Grant #12 ships GrantMatch's full agent + Bakesy #12 ships
+  CakeQuote at $10/mo). The "no/weak incumbent" instinct is unreliable by default;
+  treat every gap claim as false until Agent 2 disproves it. Both ideas this run
+  died to a SINGLE web search each.
+- THIRD consecutive 2/2-kill run (#10 0/2, #11 0/2, #12 0/2). Kill rate now 54%.
+  Net-new ideation has produced ZERO hotbox candidates in three straight runs. This
+  is no longer "the ideator is reaching" — it is exhausted. Continuing to generate
+  is now negative-value: it burns a run that should be spent triaging the queue.
+- DECISION POINT for Shivam (firmest yet): the factory's standing recommendation to
+  pause net-new ideation for one triage run has been ignored across #11→#12 because
+  the routine auto-generates. Recommend Shivam either (a) run the triage session, or
+  (b) authorize the routine to SKIP ideation when the prior two runs were both 2/2
+  kills and instead emit a one-screen backlog-triage prompt. Surfaced via push.
+
 ### Process note (Run #11):
 - Pushed directly to main (clean run, no stranding — fifth in a row).
 - EMAIL DELIVERY: attempted per STEP 5, expected SendGrid HTTP 403 "Host not in
@@ -390,18 +415,21 @@ Last run date: 2026-06-19
 - Undiscussed-leads triage: ProgramPilot, ScopeGuard, DealGate,
   PolicyDiff still await a single 30-min triage session
 
-### PRIORITY for next run (re-escalated Run #11 — now FIRM):
-- THREE consecutive low-yield runs (#9 1/2, #10 0/2, #11 0/2); net-new
-  ideation has produced zero hotbox candidates in two straight runs.
-  RECOMMENDATION: pause net-new ideation for ONE run and run a single
-  30-min triage session on the existing queue — it now clearly holds more
-  validated potential than fresh ideas. Queue: hotbox = PatchPilot, PrepPilot,
+### PRIORITY for next run (re-escalated Run #12 — now CRITICAL):
+- THREE consecutive 2/2-kill runs (#10, #11, #12 — plus #9 1/2). Net-new ideation
+  has produced ZERO hotbox candidates in three straight runs and mechanisms are now
+  being recycled. Continuing to generate is negative-value.
+- HARD RECOMMENDATION: next run, SKIP net-new ideation and run the 30-min triage
+  session on the existing queue. The queue holds far more validated potential than
+  any fresh idea has in three runs. Queue: hotbox = PatchPilot, PrepPilot,
   ReplayCoach, CommissionHound; undiscussed = ProgramPilot (#3 -active),
   ScopeGuard (#6), DealGate (#7), PolicyDiff (#8).
 - Highest-leverage two: PolicyDiff (#8, strongest WTP evidence to date —
   $5k/yr incumbent tier) and CommissionHound (#9, one ~20-interview zero-build
-  kill question). ProgramPilot (#3) still -active across 8 runs — discuss or
-  formally close.
+  kill question). ProgramPilot (#3) still -active across 9 runs — discuss or
+  formally close so it stops being re-flagged every run.
+- PROCESS FIX to consider: let the routine auto-skip ideation when the prior two
+  runs were both 2/2 kills, emitting a backlog-triage prompt instead.
 
 ### Notes from Shivam:
 -
