@@ -270,6 +270,19 @@ Last run date: 2026-06-20
   (b) authorize the routine to SKIP ideation when the prior two runs were both 2/2
   kills and instead emit a one-screen backlog-triage prompt. Surfaced via push.
 
+### Process note (Run #12):
+- BRANCH STRANDING RECURRED in mechanics but was caught and corrected: local `main`
+  ref was stale at Run #2 state, so the initial `git checkout main` aborted and the
+  commit landed on the working branch. Verified `origin/main` was actually current
+  (Run #11) and that HEAD was a clean fast-forward, then pushed HEAD → origin/main
+  AND → origin/claude/festive-noether-kraesk (both now at the Run #12 commit, in
+  sync). Source of truth on main is intact. The stale-local-main footgun keeps
+  recurring — worth a permanent harness fix (auto-sync local main before STEP 4).
+- EMAIL DELIVERY FAILED again (7th+ consecutive run): SendGrid HTTP 403 "Host not in
+  allowlist: api.sendgrid.com." Not retried per STEP 5. Push notification + GitHub
+  main remain the working delivery channels. Will fail every run until the host is
+  allowlisted or the delivery mechanism is switched.
+
 ### Process note (Run #11):
 - Pushed directly to main (clean run, no stranding — fifth in a row).
 - EMAIL DELIVERY: attempted per STEP 5, expected SendGrid HTTP 403 "Host not in
