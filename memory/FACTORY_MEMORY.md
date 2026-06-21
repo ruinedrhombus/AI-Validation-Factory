@@ -1,19 +1,19 @@
 # FACTORY MEMORY — AI Validation Factory
-Last updated: 2026-06-20
-Total runs: 12
-Last run date: 2026-06-20
+Last updated: 2026-06-21
+Total runs: 13
+Last run date: 2026-06-21
 
 ---
 
 ## QUICK STATS
 | Metric | Count |
 |--------|-------|
-| Total runs | 12 |
+| Total runs | 13 |
 | Ideas generated | 24 |
-| Killed immediately | 13 |
+| Killed (immediate + triage) | 14 |
 | Discussed | 6 |
 | Proceeded to validation | 0 |
-| Kill rate | 54% |
+| Kill rate | 58% |
 
 ---
 
@@ -35,8 +35,8 @@ Last run date: 2026-06-20
 | 7 | 2026-06-11 | MatchLoop | Independent professional matchmakers / dating coaches | Killed at stress test — incumbent parity + ~3k global TAM |
 | 7 | 2026-06-11 | DealGate | Creators / UGC freelancers (30k–500k followers) | Stronger pick — hotbox pending positioning vs free incumbents, awaiting discussion |
 | 8 | 2026-06-12 | StaySignal | Solo paid-community operators (Skool/Circle/Discord) | Killed at stress test — Circle ships it natively, Skool niche tools exist, platform risk high |
-| 8 | 2026-06-12 | PolicyDiff | Solo fractional HR consultants (5–15 SMB clients, multi-state) | Stronger pick — verified $5k/yr→$39/mo price umbrella, gated on law-feed sourcing, awaiting discussion |
-| 9 | 2026-06-13 | CommissionHound | Solo home-based independent travel advisors (host-agency ICs) | Hotbox — verified money-pain, gated on one kill question: % of advisors who can chase suppliers directly vs host-routed / Tern-covered |
+| 8 | 2026-06-12 | PolicyDiff | Solo fractional HR consultants (5–15 SMB clients, multi-state) | DOWNGRADED at triage (Run #13) — $39/mo wedge CLOSED: Mineral Essentials ($39/mo) ships multi-state law-change alerts at that price; SixFifty ($5k/yr) now ships AI auto-monitoring + per-state impact + white-label portals AND courts the fractional-HR persona (Fractional People People). No defensible middle. Needs a sharper mechanism or kill. |
+| 9 | 2026-06-13 | CommissionHound | Solo home-based independent travel advisors (host-agency ICs) | Killed at triage (Run #13) — kill question resolved AGAINST: solo persona is overwhelmingly host-routed (direct supplier credentials require min-volume/years) AND Tern now ships Advisor Commission Tracking + Agency Reconciliation natively; TESS too. No paid wedge. |
 | 9 | 2026-06-13 | CastRadar | Semi-pro freelance voice actors (home studio) | Killed at stress test — supply sources prohibit scraping, Cast Me Now undercuts at $3–8/mo, lowest-WTP segment |
 | 10 | 2026-06-18 | PeakDate | Solo monetizing food bloggers / recipe developers | Killed at stress test — mechanism is free common knowledge (RankIQ/Yoast teach "publish 3mo early"), no defensible core, serious-blogger TAM ~5k too small, fragile Trends API |
 | 10 | 2026-06-18 | FirstMover | Solo freelance web/brand designers ($2–8k projects) | Killed at stress test — no legal structured local-SMB trigger feed (signal lives on ToS-blocked LinkedIn); Owler $35 owns startup-trigger space; ideator's LeadLens comp was wrong (ad service, not trigger SaaS) |
@@ -50,6 +50,7 @@ Last run date: 2026-06-20
 ## KILLED IDEAS
 | Run # | Date | Idea Name | Category | Reason |
 |-------|------|-----------|----------|--------|
+| 9 | 2026-06-13 | CommissionHound | Commission reconciliation/chase for solo travel advisors | Killed at TRIAGE (Run #13) — the hotbox kill question resolved against it on both axes: (1) the target solo persona is overwhelmingly host-routed, because direct supplier credentials require minimum sales volumes / years, so the minority who can chase suppliers directly are not the solo persona; (2) Tern now ships Advisor Commission Tracking ("track overdue payments, log what you received from your host or suppliers") + Agency Commission Reconciliation, priced down to solo advisors, and TESS automates commission + wholesaler reconciliation. The reconciliation-and-chase loop is now native to the CRM these advisors already use — no paid wedge |
 | 12 | 2026-06-20 | GrantMatch | Grant discovery + RFP extraction for freelance grant writers | Killed at stress test — Vee's "Grant" AI agent already ships the full workflow (finds opportunities + extracts requirements + manages multi-client pipeline + learns voice, $349–835/mo); the discovery layer is commoditized free (Grants.gov, OpenGrants) or cheap (GrantWatch ~$18/mo) and drafting/extraction is a ChatGPT prompt; Instrumentl/Grantable/Grant Assistant all racing to bundle the freelancer angle — incumbent product on one end, free public tools on the other, no defensible $29 middle |
 | 12 | 2026-06-20 | CakeQuote | Order/quote intake for home-based custom-cake bakers | Killed at stress test — Bakesy ($10/mo) ships the exact product and literally markets "move off Instagram DMs" with shareable order forms auto-capturing flavor/size/date/photos; CakeBoss ($15), BakeProfit (free), Bake Diary, Castiron (free) cover the same workflow; free Google Forms + Sheets is "good enough" below ~25 orders/wk, which is most of the persona; cheaper purpose-built incumbent on one side, free stack on the other, no room to charge more for a clone |
 | 11 | 2026-06-19 | MarkGuard | Trademark clearance for POD/Etsy sellers | Killed at stress test — the exact product (real-time, per-word, USPTO-backed, risk-scored POD clearance) already ships FREE via Merch Titans (25 scans/day no-account, unlimited with free account), plus isCompliant and bundled in Merch Informer; Amazon Merch already screens trademarks at upload (platform IS the screen); USPTO data is the very asset incumbents already built and give away; no room to charge $20/mo for a free single-feature |
@@ -270,6 +271,39 @@ Last run date: 2026-06-20
   (b) authorize the routine to SKIP ideation when the prior two runs were both 2/2
   kills and instead emit a one-screen backlog-triage prompt. Surfaced via push.
 
+### TRIAGE RUN (Run #13) — first ideation-skip:
+- FIRST run to SKIP net-new ideation. Trigger: three consecutive 2/2-kill runs
+  (#10, #11, #12) — the exact condition the factory had proposed for an auto-skip.
+  Instead of generating two more low-EV ideas, Run #13 spent its budget on
+  zero-build verification of the two highest-leverage backlog candidates.
+- BOTH top backlog leads degraded under one search each:
+  • CommissionHound (#9, hotbox) → KILLED. Kill question resolved against it:
+    solo persona overwhelmingly host-routed; Tern + TESS now ship the
+    reconciliation/chase loop natively. Hotbox 4 → 3.
+  • PolicyDiff (#8, "strongest WTP evidence to date") → DOWNGRADED. The $39/mo
+    middle it depended on is now occupied by Mineral Essentials ($39/mo
+    multi-state law alerts), while SixFifty ships AI auto-monitoring + per-state
+    impact + white-label portals AND is courting the fractional-HR persona. The
+    empty-middle thesis is dead.
+- KEY LESSON: backlog "validated potential" decays. PolicyDiff was logged as the
+  factory's strongest-ever WTP case ~9 runs ago; by Run #13 both incumbents had
+  closed the gap. Hotbox/undiscussed leads must be re-verified before they're
+  treated as bankable — a parked idea is not a preserved idea. Add a freshness
+  check: any lead >4 runs old gets a competitor re-scan before discussion.
+- The triage was net-positive: it cleared two leads with zero spend and corrected
+  a stale "strongest lead" belief — exactly the value the backlog-triage
+  recommendation promised. Skipping ideation when the kill-streak trigger fires is
+  validated; recommend formalizing it.
+- REMAINING QUEUE after triage: hotbox = PatchPilot (#1), PrepPilot (#4),
+  ReplayCoach (#5); undiscussed = ProgramPilot (#3, -active 10 runs), ScopeGuard
+  (#6), DealGate (#7). Next zero-build target: ReplayCoach niche-size question.
+
+### Process note (Run #13):
+- Pushed directly to main per CLAUDE.md. No new branch, no PR.
+- EMAIL DELIVERY: SendGrid expected to 403 ("Host not in allowlist:
+  api.sendgrid.com") as it has every run since #6. Attempted once per STEP 5,
+  not retried. Push notification + GitHub main remain the working channels.
+
 ### Process note (Run #12):
 - BRANCH STRANDING RECURRED in mechanics but was caught and corrected: local `main`
   ref was stale at Run #2 state, so the initial `git checkout main` aborted and the
@@ -330,12 +364,13 @@ Last run date: 2026-06-20
   more billable students). Gated on one question: is the niche of
   solo esports coaches with paying rosters big enough? Validate
   audience size before any build decision.
-- CommissionHound (Run #9, hotbox) — verified recurring money-pain
-  for solo travel advisors. Gated on one kill question answerable
-  with ~20 forum interviews, zero build: what % of target advisors
-  can chase suppliers directly (vs host-routed commissions), and
-  are they already on Tern/TESS? If >half host-routed or
-  Tern-covered, kill.
+- CommissionHound (Run #9) — KILLED at triage Run #13. Kill question
+  resolved against it (overwhelmingly host-routed + Tern/TESS now
+  ship the loop natively). Removed from hotbox.
+- PolicyDiff (Run #8) — DOWNGRADED at triage Run #13 from "strongest
+  WTP" to incumbent-squeezed. The $39/mo middle is gone (Mineral owns
+  it; SixFifty courting the persona). Only revisit with a genuinely
+  sharper, differentiated per-client mechanism; otherwise kill.
 
 ### Process note (Run #4):
 - Run #3 report/memory had been committed to the claude/ working
@@ -423,26 +458,27 @@ Last run date: 2026-06-20
 -
 
 ### Open questions to explore:
-- CommissionHound kill question: % of solo travel advisors who can
-  chase suppliers directly vs host-routed; Tern/TESS penetration
-- Undiscussed-leads triage: ProgramPilot, ScopeGuard, DealGate,
-  PolicyDiff still await a single 30-min triage session
+- ReplayCoach (#5) niche-size: is the population of solo esports coaches with
+  paying rosters big enough for a 500-cap launch without owning >5% of the
+  niche? Next zero-build research target.
+- ProgramPilot (#3) still -active across 10 runs — discuss or formally close.
 
-### PRIORITY for next run (re-escalated Run #12 — now CRITICAL):
-- THREE consecutive 2/2-kill runs (#10, #11, #12 — plus #9 1/2). Net-new ideation
-  has produced ZERO hotbox candidates in three straight runs and mechanisms are now
-  being recycled. Continuing to generate is negative-value.
-- HARD RECOMMENDATION: next run, SKIP net-new ideation and run the 30-min triage
-  session on the existing queue. The queue holds far more validated potential than
-  any fresh idea has in three runs. Queue: hotbox = PatchPilot, PrepPilot,
-  ReplayCoach, CommissionHound; undiscussed = ProgramPilot (#3 -active),
-  ScopeGuard (#6), DealGate (#7), PolicyDiff (#8).
-- Highest-leverage two: PolicyDiff (#8, strongest WTP evidence to date —
-  $5k/yr incumbent tier) and CommissionHound (#9, one ~20-interview zero-build
-  kill question). ProgramPilot (#3) still -active across 9 runs — discuss or
-  formally close so it stops being re-flagged every run.
-- PROCESS FIX to consider: let the routine auto-skip ideation when the prior two
-  runs were both 2/2 kills, emitting a backlog-triage prompt instead.
+### PRIORITY for next run (set Run #13 after first triage):
+- Run #13 ran the triage the factory had been demanding and it WORKED: cleared
+  CommissionHound (kill) and downgraded PolicyDiff (wedge closed) with zero spend,
+  and exposed that "validated potential" in the backlog had quietly decayed.
+- The backlog is now thinner and more honest. Remaining: hotbox = PatchPilot (#1),
+  PrepPilot (#4), ReplayCoach (#5); undiscussed = ProgramPilot (#3, -active),
+  ScopeGuard (#6), DealGate (#7).
+- RECOMMENDED next run: continue triage, target = ReplayCoach niche-size question
+  (cleanest WTP logic the factory ever produced; the only thing gating it is
+  audience size — answerable with zero build). Do NOT resume blind ideation until
+  the backlog is fully triaged OR Shivam directs otherwise.
+- DECISION FOR SHIVAM (surfaced via push Run #13): (a) approve ReplayCoach
+  niche-size research as next target; (b) formally close ProgramPilot (#3); (c)
+  confirm the auto-skip-ideation-on-kill-streak rule should be standing policy.
+- FRESHNESS RULE (new, from Run #13): any backlog lead >4 runs old must get a
+  competitor re-scan before it's treated as bankable. Parked ≠ preserved.
 
 ### Notes from Shivam:
 -
