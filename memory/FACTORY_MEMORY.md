@@ -1,39 +1,40 @@
 # FACTORY MEMORY — AI Validation Factory
-Last updated: 2026-06-22
-Total runs: 14
-Last run date: 2026-06-22
+Last updated: 2026-06-23
+Total runs: 15
+Last run date: 2026-06-23
 
 ---
 
 ## QUICK STATS
 | Metric | Count |
 |--------|-------|
-| Total runs | 14 |
+| Total runs | 15 |
 | Ideas generated | 24 |
-| Killed (immediate + triage) | 15 |
+| Killed (immediate + triage) | 19 |
 | Discussed | 6 |
 | Proceeded to validation | 0 |
-| Kill rate | 63% |
+| Kill rate | 79% |
+| Backlog (hotbox + undiscussed) | 0 — EXHAUSTED |
 
 ---
 
 ## ALL IDEAS GENERATED
 | Run # | Date | Idea Name | Persona | Status |
 |-------|------|-----------|---------|--------|
-| 1 | 2026-06-06 | PatchPilot | Solo SaaS founders | Hotbox |
+| 1 | 2026-06-06 | PatchPilot | Solo SaaS founders | KILLED at triage (Run #15) — never re-scanned in 14 wks; wedge absorbed into FREE natives: GitHub Dependabot ships "Most important" prioritization + auto-triage rules + grouped updates + Copilot Autofix, Mend Renovate moved Merge Confidence (breaking-change prediction) into the free OSS plan in 2026; out-built above by funded Infield ($600/mo, $3M raised). Vitamin for a solo team. Hotbox → 0 |
 | 1 | 2026-06-06 | ShipNote | Solo dev-tool founders | Killed |
 | 2 | 2026-06-07 | TrustLite | Indie SaaS founders | Killed |
 | 2 | 2026-06-07 | ReportForge | Solo pentesters | Not discussed |
 | 3 | 2026-06-07 | ProgramPilot | Solo online fitness coaches | Stronger pick — session left -active, never discussed |
 | 3 | 2026-06-07 | RouteCraft | Solo travel advisors | Weaker — high platform risk |
-| 4 | 2026-06-08 | PrepPilot | Solo personal chefs / meal-prep operators | Hotbox — validate reachability |
+| 4 | 2026-06-08 | PrepPilot | Solo personal chefs / meal-prep operators | KILLED at triage (Run #15) — reachability wall confirmed (offline persona clusters only in tiny gatekept pockets; APPCA bundles "Personal Chef Office" software FREE into $350 membership = competitor owns the channel; no Meta targeting segment; ₹1k/$50 test buys no signal) + TAM too thin (~2,544 US chefs, 500-cap needs ~20%) + workflow already ships (Modernmeal Pro ~$32/mo, Promealplan). Hotbox 2→1 |
 | 4 | 2026-06-08 | ClientPulse | Solo marketing freelancers | Killed — crowded incumbent space |
 | 5 | 2026-06-09 | ReplayCoach | Solo esports coaches (Valorant/LoL/CS2) | KILLED at triage (Run #14) — niche-size gate fails (serious paying-roster solo coaches are low-thousands globally; 500-cap needs >5–10% of the profession) AND freshness re-scan shows the coach-facing auto-review mechanism now ships (Coach AI 80+ auto-detections from GRID data, valocoach.ai, iTero, Cloud9 Assistant Coach) while free player-side AI coaches (Mobalytics $0, Blitz.gg) erode the persona's own revenue. Was "cleanest WTP ever"; decayed like PolicyDiff. Hotbox 3→2 |
 | 5 | 2026-06-09 | LeagueDesk | Solo amateur sports league organizers | Killed — weak monetization, free WhatsApp/Sheets substitute |
-| 6 | 2026-06-10 | ScopeGuard | Solo consultants / freelancers (agency-of-one) | Stronger pick — monitor-and-alert, awaiting discussion |
+| 6 | 2026-06-10 | ScopeGuard | Solo consultants / freelancers (agency-of-one) | KILLED at triage (Run #15) — name+mechanism already shipping (scopeguard.app live, ScopePilot + ScopeShield $20/mo same-quarter copycats; Bonsai/Moxie own SOW+change-order); FAILS FormFlag test (fuzzy-SOW-vs-messy-email = over/under-flag false-positive machine, user re-reads every flag); data access blows cap (Gmail restricted scope → CASA $15k–75k/yr). Vitamin |
 | 6 | 2026-06-10 | MenuCost | Solo café / cloud-kitchen / catering operators | Hotbox candidate — reachability wall (offline persona) |
 | 7 | 2026-06-11 | MatchLoop | Independent professional matchmakers / dating coaches | Killed at stress test — incumbent parity + ~3k global TAM |
-| 7 | 2026-06-11 | DealGate | Creators / UGC freelancers (30k–500k followers) | Stronger pick — hotbox pending positioning vs free incumbents, awaiting discussion |
+| 7 | 2026-06-11 | DealGate | Creators / UGC freelancers (30k–500k followers) | KILLED at triage (Run #15) — wedge ("nobody auto-qualifies+scam-flags+triages INBOUND deals") is false: CollabGrow AI Email Analyzer does it FREE (scam check + deliverables-vs-fee qualification + reply suggestions); Beacons Beam AI surfaces/qualifies/drafts inbound (~$10/mo, tool persona already uses); Passionfroot/CreatorsJet/Pillar cover intake+triage; platform risk HIGH (IG native Partnership Messages inbox) |
 | 8 | 2026-06-12 | StaySignal | Solo paid-community operators (Skool/Circle/Discord) | Killed at stress test — Circle ships it natively, Skool niche tools exist, platform risk high |
 | 8 | 2026-06-12 | PolicyDiff | Solo fractional HR consultants (5–15 SMB clients, multi-state) | DOWNGRADED at triage (Run #13) — $39/mo wedge CLOSED: Mineral Essentials ($39/mo) ships multi-state law-change alerts at that price; SixFifty ($5k/yr) now ships AI auto-monitoring + per-state impact + white-label portals AND courts the fractional-HR persona (Fractional People People). No defensible middle. Needs a sharper mechanism or kill. |
 | 9 | 2026-06-13 | CommissionHound | Solo home-based independent travel advisors (host-agency ICs) | Killed at triage (Run #13) — kill question resolved AGAINST: solo persona is overwhelmingly host-routed (direct supplier credentials require min-volume/years) AND Tern now ships Advisor Commission Tracking + Agency Reconciliation natively; TESS too. No paid wedge. |
@@ -50,6 +51,10 @@ Last run date: 2026-06-22
 ## KILLED IDEAS
 | Run # | Date | Idea Name | Category | Reason |
 |-------|------|-----------|----------|--------|
+| 1 | 2026-06-06 | PatchPilot | Smart dependency-update/patch triage for solo SaaS founders | Killed at TRIAGE (Run #15) — oldest lead, parked 14 wks, never re-scanned. Wedge ("prioritize which updates matter, beyond noisy Dependabot") absorbed into FREE native features: GitHub Dependabot now ships "Most important" CVSS/exploitability prioritization + auto-triage rules (dismiss/snooze) + grouped updates + Copilot Autofix (AI writes fix in-PR); Mend Renovate moved Merge Confidence (breaking-change prediction, PatchPilot's hardest feature) into the free OSS plan in 2026. Out-built up-market by funded Infield ($3M raised, $600/mo). Vitamin for a one-person team with no compliance pressure — solo founders run Dependabot free and defer the rest. 8th straight wrong-on-incumbent |
+| 4 | 2026-06-08 | PrepPilot | Weekly menu/allergy/grocery-list tool for solo personal chefs | Killed at TRIAGE (Run #15) — fails all three axes. (1) REACHABILITY WALL (decisive, original gate): offline persona clusters only in tiny gatekept pockets (USPCA/APPCA, FB groups in low hundreds, hireachef.com) and the association channel is competitor-owned — APPCA bundles "Personal Chef Office" software FREE into its $350 membership; Meta exposes no clean targeting segment; a ₹1k/$50 test buys no usable signal. Same wall that killed MenuCost (#6). (2) TAM TOO THIN: ~2,544 US personal chefs (Zippia/BLS); 500-cap needs ~20% of the visible profession. (3) WORKFLOW ALREADY SHIPS: Modernmeal Pro (~$32/mo) is PrepPilot live, plus Promealplan + free APPCA tool. Hotbox 2→1 |
+| 6 | 2026-06-10 | ScopeGuard | Monitor-and-alert scope-creep detection for solo freelancers | Killed at TRIAGE (Run #15) — three independent kill axes. (1) NAME+MECHANISM ALREADY LIVE: scopeguard.app ships the identical pitch ("AI detects out-of-scope requests, generates change orders one-click"); ScopePilot + ScopeShield ($20/mo) are same-quarter copycats; Bonsai/Moxie/HoneyBook already own the SOW+change-order workflow — a crowded copycat micro-niche, not a wedge. (2) FAILS THE FORMFLAG TEST: judging a fuzzy SOW against messy client emails is an over-/under-flagging false-positive machine; the freelancer re-reads every flag, so the time-saving is fake. (3) DATA ACCESS BLOWS THE CAP: monitoring email needs Gmail restricted scope → annual Google CASA assessment ($15k–75k Tier-3), busting the ₹10k/6-wk budget. Vitamin |
+| 7 | 2026-06-11 | DealGate | Inbound brand-deal intake/qualify/triage for mid-tier creators | Killed at TRIAGE (Run #15) — the wedge ("incumbents only do outbound/payments; nobody auto-qualifies + scam-flags + triages INBOUND brand DMs") is factually false. CollabGrow AI Email Analyzer does the exact core FREE (paste a brand email → scam checks, deliverables-vs-fee qualification "flags if below market rate for your size", risk score, reply suggestions); Beacons Beam AI "surfaces inbound opportunities, negotiates rates, drafts responses" (~$10/mo, inside a tool the persona already uses); Passionfroot (free, 2–15%/deal) + CreatorsJet (€19/mo) + Pillar ($29/mo) cover intake+triage. Platform risk HIGH: Instagram already routes offers into a native Partnership Messages inbox — AI triage there is one update away |
 | 5 | 2026-06-09 | ReplayCoach | AI-drafted coaching reviews/drills for solo esports coaches | Killed at TRIAGE (Run #14) — both axes of the gating kill question now fail. (1) NICHE TOO SMALL: serious solo coaches with paying rosters are low-thousands globally (Metafy is curated top-talent, ~300 coaches; market $ is service revenue not tool-buyer count), so a 500-cap launch needs >5–10% of the entire profession — same wall as MatchLoop #7. (2) FRESHNESS RE-SCAN (lead 9 runs old): the coach-facing "auto-draft the review from match data" moat now ships as product — Coach AI ("raw GRID data to coach-ready insights, 80+ automated issue detections"), valocoach.ai, iTero, Cloud9 Assistant Coach, Insights.gg/Coachable — while free player-side AI coaches (Mobalytics $0, Blitz.gg) erode the reason to pay a human coach at all, shrinking the persona's own budget. Factory's strongest-ever WTP lead decayed on both axes — the PolicyDiff "parked ≠ preserved" lesson, repeated |
 | 9 | 2026-06-13 | CommissionHound | Commission reconciliation/chase for solo travel advisors | Killed at TRIAGE (Run #13) — the hotbox kill question resolved against it on both axes: (1) the target solo persona is overwhelmingly host-routed, because direct supplier credentials require minimum sales volumes / years, so the minority who can chase suppliers directly are not the solo persona; (2) Tern now ships Advisor Commission Tracking ("track overdue payments, log what you received from your host or suppliers") + Agency Commission Reconciliation, priced down to solo advisors, and TESS automates commission + wholesaler reconciliation. The reconciliation-and-chase loop is now native to the CRM these advisors already use — no paid wedge |
 | 12 | 2026-06-20 | GrantMatch | Grant discovery + RFP extraction for freelance grant writers | Killed at stress test — Vee's "Grant" AI agent already ships the full workflow (finds opportunities + extracts requirements + manages multi-client pipeline + learns voice, $349–835/mo); the discovery layer is commoditized free (Grants.gov, OpenGrants) or cheap (GrantWatch ~$18/mo) and drafting/extraction is a ChatGPT prompt; Instrumentl/Grantable/Grant Assistant all racing to bundle the freelancer angle — incumbent product on one end, free public tools on the other, no defensible $29 middle |
@@ -325,6 +330,37 @@ Last run date: 2026-06-22
   reachability, DealGate positioning) — after which the queue is exhausted and the
   factory MUST resume net-new ideation. Recommend one more triage run, then resume.
 
+### TRIAGE RUN (Run #15) — third ideation-skip, BACKLOG CLEARED:
+- THIRD and FINAL triage run. Per Run #14's standing instruction (one more
+  triage then resume ideation once the queue is clear) and with Shivam's notes
+  still empty (no direction across #13–#15), Run #15 cleared the ENTIRE
+  remaining backlog in one pass rather than dragging one-lead-per-run triage
+  across three more unattended runs.
+- CLEAN SWEEP — all four remaining leads KILLED on zero-build live re-scan:
+  • PrepPilot (#4, hotbox) → KILL. Reachability wall confirmed (offline persona,
+    competitor-owned APPCA channel, no Meta segment) + TAM ~2,544 US chefs +
+    Modernmeal Pro $32/mo already ships it. Hotbox 2→1.
+  • DealGate (#7, undiscussed) → KILL. Wedge false: CollabGrow does inbound
+    qualify+scam-flag FREE; Beacons Beam covers it ~$10/mo; IG native
+    Partnership inbox = high platform risk.
+  • ScopeGuard (#6, undiscussed) → KILL. Name already a live product +
+    same-quarter copycats; fails FormFlag test; Gmail CASA cost busts the cap.
+  • PatchPilot (#1, oldest hotbox, never re-scanned) → KILL. Wedge absorbed
+    into free Dependabot auto-triage + Renovate Merge Confidence; Infield
+    out-builds up-market. Hotbox 1→0.
+- BACKLOG IS NOW EMPTY for the first time since Run #1 (hotbox 0, undiscussed 0).
+- FRESHNESS RULE VINDICATED A 4TH TIME, now decisively: across Runs #13–15,
+  SEVEN memory-logged "validated potential" leads were re-verified and ALL
+  died or downgraded (CommissionHound, PolicyDiff, ReplayCoach, PrepPilot,
+  DealGate, ScopeGuard, PatchPilot). Parked ≠ preserved — proven seven times.
+  Every parked lead is now assumed decayed until a fresh re-scan says otherwise.
+- INCUMBENT-INSTINCT TALLY: Agent 1's "no/weak incumbent" framing has now failed
+  live verification 8 runs running. The name-and-link rule is load-bearing; the
+  ideator's gap claims must be treated as false by default.
+- THE HANDOFF: the triage mandate is COMPLETE. Run #16 MUST resume net-new
+  ideation with a clean slate — do not loop triage past an empty backlog. No
+  Shivam decision is required to proceed; ProgramPilot (#3) stays reopenable.
+
 ### Process note (Run #14):
 - Local `main` ref was stale at Run #2 state (23841b0); `git fetch origin main`
   confirmed origin/main was actually current at Run #13 (36d9957) and that HEAD
@@ -391,27 +427,14 @@ Last run date: 2026-06-22
 - Too early to tell
 
 ### Ideas worth revisiting:
-- PatchPilot (hotbox) — strong recurring pain, real moat,
-  revisit after platform risk assessment
-- PrepPilot (hotbox, Run #4) — strong weekly pain, low platform
-  risk, safety hook; gated on reachability of offline personal chefs
-- ProgramPilot (Run #3) — CLOSED administratively at Run #14 after 11
-  runs -active with zero Shivam engagement (renamed to -final,
-  "Closed — non-engagement, reopen anytime"). Reopen only if Shivam
-  wants to discuss; re-scan competitors first per the freshness rule.
-- ReplayCoach (Run #5) — KILLED at triage Run #14. Niche-size gate
-  failed (paying-roster solo coaches are low-thousands; 500-cap needs
-  >5–10% of the profession) AND the coach-facing auto-review moat now
-  ships (Coach AI / valocoach.ai / iTero) while free player-side AI
-  coaches (Mobalytics, Blitz) erode the persona's revenue. Removed
-  from hotbox. The "cleanest WTP ever" lead decayed like PolicyDiff.
-- CommissionHound (Run #9) — KILLED at triage Run #13. Kill question
-  resolved against it (overwhelmingly host-routed + Tern/TESS now
-  ship the loop natively). Removed from hotbox.
-- PolicyDiff (Run #8) — DOWNGRADED at triage Run #13 from "strongest
-  WTP" to incumbent-squeezed. The $39/mo middle is gone (Mineral owns
-  it; SixFifty courting the persona). Only revisit with a genuinely
-  sharper, differentiated per-client mechanism; otherwise kill.
+- BACKLOG IS EMPTY as of Run #15. Every parked lead has been triaged and
+  killed/downgraded. There is nothing to revisit — Run #16 starts net-new.
+- ProgramPilot (Run #3) — the ONLY reopenable item. CLOSED administratively at
+  Run #14 after 11 runs -active with zero engagement (non-engagement, not a
+  kill). Reopen only if Shivam asks; re-scan competitors first per freshness rule.
+- All others KILLED at triage (#13–#15): PatchPilot, PrepPilot, ScopeGuard,
+  DealGate, ReplayCoach, CommissionHound, PolicyDiff. Do not resurrect without
+  a genuinely new mechanism — see KILLED IDEAS table for each kill reason.
 
 ### Process note (Run #4):
 - Run #3 report/memory had been committed to the claude/ working
@@ -499,30 +522,38 @@ Last run date: 2026-06-22
 -
 
 ### Open questions to explore:
-- ReplayCoach (#5) niche-size — RESOLVED at Run #14: too small + mechanism now
-  ships. Killed.
-- ProgramPilot (#3) — RESOLVED at Run #14: administratively closed (non-engagement).
-- PrepPilot (#4) reachability: can offline personal chefs / meal-prep operators be
-  reached affordably (ad inventory / channel)? Next zero-build triage target.
-- DealGate (#7) positioning: is there a defensible wedge vs free creator-deal
-  incumbents (Pillar, Notion templates, free CRM tiers)? Zero-build re-scan due.
+- ALL backlog questions RESOLVED at Run #15 — every parked lead triaged & killed.
+  PrepPilot reachability (killed: wall confirmed), DealGate positioning (killed:
+  CollabGrow/Beacons do it free), ScopeGuard (killed: copycats + FormFlag fail),
+  PatchPilot platform risk (killed: free Dependabot/Renovate absorbed the wedge).
+- No open backlog questions remain. The next questions come from Run #16's
+  net-new ideas.
 
-### PRIORITY for next run (set Run #14 after second triage):
-- Two triage runs (#13, #14) have cleared three of the four memory-logged "strong"
-  leads: CommissionHound (kill), PolicyDiff (downgrade), ReplayCoach (kill).
-  ProgramPilot (#3) administratively closed. The freshness rule is fully validated.
-- BACKLOG REMAINING: hotbox = PatchPilot (#1), PrepPilot (#4); undiscussed =
-  ScopeGuard (#6), DealGate (#7). Two zero-build triage targets left.
-- RECOMMENDED next run: ONE more triage — target = PrepPilot (#4) reachability of
-  offline personal-chef / meal-prep operators (the original hotbox gate). After
-  PrepPilot + DealGate + ScopeGuard are triaged the backlog is EXHAUSTED and the
-  factory MUST resume net-new ideation — do not loop triage past an empty queue.
-- DECISION FOR SHIVAM (surfaced via push Run #14): (a) confirm one more triage run
-  (PrepPilot reachability) then resume ideation; (b) note ProgramPilot was closed
-  for non-engagement — say if you'd rather reopen it; (c) confirm the
-  auto-skip-ideation-on-kill-streak rule + freshness rule as standing policy.
-- FRESHNESS RULE (from Run #13, validated 3× since): any backlog lead >4 runs old
-  must get a competitor re-scan before it's treated as bankable. Parked ≠ preserved.
+### PRIORITY for next run (set Run #15 — TRIAGE COMPLETE, RESUME IDEATION):
+- THREE triage runs (#13, #14, #15) have now cleared the ENTIRE backlog. Run #15
+  was a clean sweep: PrepPilot, DealGate, ScopeGuard, PatchPilot all killed.
+  Backlog = 0 (hotbox 0, undiscussed 0). The freshness rule is fully validated
+  (7 leads re-verified across #13–15, all died/downgraded).
+- RUN #16 MUST RESUME NET-NEW IDEATION. The triage mandate is complete; do not
+  loop triage past an empty queue. Generate 2 fresh ideas per STEP 2–3, applying
+  every accumulated screen below (Agent 1 avoid-categories + name-and-link rule).
+  No Shivam decision is required to proceed — resume by default.
+- IDEATION GUARDRAILS carried in (the kills taught these — apply at ideation, not
+  just stress-test): (1) name+LINK the closest incumbent and state the gap as a
+  falsifiable sentence — the "no incumbent" instinct has been wrong 8 runs
+  straight, treat every gap claim as false until proven; (2) screen reachability
+  FIRST for offline micro-operators (PrepPilot/MenuCost both died on this wall) —
+  name the affordable, targetable channel or don't propose it; (3) avoid
+  probabilistic mechanisms that force the user to re-check output (FormFlag/
+  ScopeGuard); (4) avoid products needing ToS-blocked or CASA-restricted data;
+  (5) pre-screen TAM — persona must support a 500-cap launch without owning >5–10%.
+- STANDING POLICY now in force (confirm-by-default unless Shivam objects):
+  (a) AUTO-SKIP ideation only when the prior TWO runs were both 2/2 IDEATION
+      kills (triage runs don't count) — then run a triage instead.
+  (b) FRESHNESS RULE: any backlog lead >4 runs old gets a competitor re-scan
+      before it's treated as bankable. Parked ≠ preserved (proven 7×).
+- ProgramPilot (#3) remains the one reopenable item (closed for non-engagement,
+  not killed). Reopen only if Shivam asks.
 
 ### Notes from Shivam:
 -
