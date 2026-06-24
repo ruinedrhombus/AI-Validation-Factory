@@ -1,19 +1,19 @@
 # FACTORY MEMORY — AI Validation Factory
-Last updated: 2026-06-23
-Total runs: 15
-Last run date: 2026-06-23
+Last updated: 2026-06-24
+Total runs: 16
+Last run date: 2026-06-24
 
 ---
 
 ## QUICK STATS
 | Metric | Count |
 |--------|-------|
-| Total runs | 15 |
-| Ideas generated | 24 |
-| Killed (immediate + triage) | 19 |
+| Total runs | 16 |
+| Ideas generated | 26 |
+| Killed (immediate + triage) | 21 |
 | Discussed | 6 |
 | Proceeded to validation | 0 |
-| Kill rate | 79% |
+| Kill rate | 81% |
 | Backlog (hotbox + undiscussed) | 0 — EXHAUSTED |
 
 ---
@@ -45,6 +45,8 @@ Last run date: 2026-06-23
 | 11 | 2026-06-19 | FormFlag | Solo online fitness/strength coaches (20–60 remote clients) | Killed at stress test — Gymscore.ai already ships coach-facing batch CV form triage with identical "save 7–12 hrs/wk" pitch; single-camera CV misses ~1/3 of faults + over-flags so time-savings collapse; Sency/Kemtai SDKs make it a 1-update platform feature |
 | 12 | 2026-06-20 | GrantMatch | Solo freelance grant writers (4–8 small-nonprofit clients) | Killed at stress test — Vee's "Grant" AI agent already ships discovery + RFP extraction + multi-client pipeline + voice-learning ($349–835/mo); discovery commoditized free (Grants.gov, OpenGrants, GrantWatch ~$18); no defensible $29 middle |
 | 12 | 2026-06-20 | CakeQuote | Solo home-based custom-cake bakers (10–25 orders/wk via Instagram DMs) | Killed at stress test — Bakesy ($10/mo) ships the exact product and markets "move off Instagram DMs" with auto-capture order forms; CakeBoss $15, BakeProfit free, Bake Diary cover same workflow; free Google Forms+Sheets is good enough below ~25 orders/wk |
+| 16 | 2026-06-24 | RoyaltyRoll | Solo "wide" self-published authors ($1k+/mo across 6–8 platforms) | Killed at stress test — reconciliation wedge already shipped: Royalties HQ reconciles expected-vs-actual payments; ScribeCount ($0–$20/mo) aggregates 10 platforms + Payments/anomaly page + public roadmap to deepen FX/payout reconciliation; the "leak" is mostly KDP reporting-lag that self-corrects (not recoverable money); free tiers anchor price; no official KDP API → fragile scraping + HIGH platform risk |
+| 16 | 2026-06-24 | PostCheck | Solo social-media creators (10k–500k followers) taking paid brand deals | Killed at stress test — CreatorFlo ($24/mo) ships AI contract extraction + deliverable parsing + risk-flagging at the exact price; ChatGPT does the pre-post check free; episodic (2–4 posts/mo) not recurring; deterministic-extraction accuracy shaky; real creator pain is late/withheld payment, not forgotten-tag clawback |
 
 ---
 
@@ -57,6 +59,8 @@ Last run date: 2026-06-23
 | 7 | 2026-06-11 | DealGate | Inbound brand-deal intake/qualify/triage for mid-tier creators | Killed at TRIAGE (Run #15) — the wedge ("incumbents only do outbound/payments; nobody auto-qualifies + scam-flags + triages INBOUND brand DMs") is factually false. CollabGrow AI Email Analyzer does the exact core FREE (paste a brand email → scam checks, deliverables-vs-fee qualification "flags if below market rate for your size", risk score, reply suggestions); Beacons Beam AI "surfaces inbound opportunities, negotiates rates, drafts responses" (~$10/mo, inside a tool the persona already uses); Passionfroot (free, 2–15%/deal) + CreatorsJet (€19/mo) + Pillar ($29/mo) cover intake+triage. Platform risk HIGH: Instagram already routes offers into a native Partnership Messages inbox — AI triage there is one update away |
 | 5 | 2026-06-09 | ReplayCoach | AI-drafted coaching reviews/drills for solo esports coaches | Killed at TRIAGE (Run #14) — both axes of the gating kill question now fail. (1) NICHE TOO SMALL: serious solo coaches with paying rosters are low-thousands globally (Metafy is curated top-talent, ~300 coaches; market $ is service revenue not tool-buyer count), so a 500-cap launch needs >5–10% of the entire profession — same wall as MatchLoop #7. (2) FRESHNESS RE-SCAN (lead 9 runs old): the coach-facing "auto-draft the review from match data" moat now ships as product — Coach AI ("raw GRID data to coach-ready insights, 80+ automated issue detections"), valocoach.ai, iTero, Cloud9 Assistant Coach, Insights.gg/Coachable — while free player-side AI coaches (Mobalytics $0, Blitz.gg) erode the reason to pay a human coach at all, shrinking the persona's own budget. Factory's strongest-ever WTP lead decayed on both axes — the PolicyDiff "parked ≠ preserved" lesson, repeated |
 | 9 | 2026-06-13 | CommissionHound | Commission reconciliation/chase for solo travel advisors | Killed at TRIAGE (Run #13) — the hotbox kill question resolved against it on both axes: (1) the target solo persona is overwhelmingly host-routed, because direct supplier credentials require minimum sales volumes / years, so the minority who can chase suppliers directly are not the solo persona; (2) Tern now ships Advisor Commission Tracking ("track overdue payments, log what you received from your host or suppliers") + Agency Commission Reconciliation, priced down to solo advisors, and TESS automates commission + wholesaler reconciliation. The reconciliation-and-chase loop is now native to the CRM these advisors already use — no paid wedge |
+| 16 | 2026-06-24 | RoyaltyRoll | Multi-platform royalty reconciliation for self-published authors | Killed at stress test — the differentiating reconciliation wedge ("aggregate across all platforms AND flag short/missing payments") is already in-market: Royalties HQ explicitly reconciles sales to actual payments received; ScribeCount ($0–$20/mo income-tiered) aggregates 10 platforms + has a Payments/anomaly page + a public roadmap to add FX/payout-date drill-down. The "money you're owed" premise is mostly KDP dashboard reporting-lag that self-corrects, not recoverable leakage. Free tiers (Book Report & ScribeCount, $0 under $1k/mo) anchor the ceiling; no official KDP reporting API exists, so it's credential/scrape-based and Amazon can break it any update (HIGH platform risk). Payers overlap entirely with existing incumbent users |
+| 16 | 2026-06-24 | PostCheck | Pre-publish brand-deal compliance/deliverable QC for creators | Killed at stress test — CreatorFlo (FloPro $24/mo) already ships AI contract extraction + deliverable parsing + risk-clause flagging inside a suite at the exact target price; Creator Pilot (£99/mo) does the heavy contract analysis; ChatGPT does the pre-post draft check free in one prompt. Use is episodic (2–4 sponsored posts/mo, not subscription-recurring); deterministic extraction from messy contracts is a false-positive machine that forces a re-read (kills the time-saving); the precipitating pain (clawback for a forgotten tag) is rare vs the real, frequent pain of late/withheld payment. Incumbents own the relationship and can add the pre-post check in one sprint |
 | 12 | 2026-06-20 | GrantMatch | Grant discovery + RFP extraction for freelance grant writers | Killed at stress test — Vee's "Grant" AI agent already ships the full workflow (finds opportunities + extracts requirements + manages multi-client pipeline + learns voice, $349–835/mo); the discovery layer is commoditized free (Grants.gov, OpenGrants) or cheap (GrantWatch ~$18/mo) and drafting/extraction is a ChatGPT prompt; Instrumentl/Grantable/Grant Assistant all racing to bundle the freelancer angle — incumbent product on one end, free public tools on the other, no defensible $29 middle |
 | 12 | 2026-06-20 | CakeQuote | Order/quote intake for home-based custom-cake bakers | Killed at stress test — Bakesy ($10/mo) ships the exact product and literally markets "move off Instagram DMs" with shareable order forms auto-capturing flavor/size/date/photos; CakeBoss ($15), BakeProfit (free), Bake Diary, Castiron (free) cover the same workflow; free Google Forms + Sheets is "good enough" below ~25 orders/wk, which is most of the persona; cheaper purpose-built incumbent on one side, free stack on the other, no room to charge more for a clone |
 | 11 | 2026-06-19 | MarkGuard | Trademark clearance for POD/Etsy sellers | Killed at stress test — the exact product (real-time, per-word, USPTO-backed, risk-scored POD clearance) already ships FREE via Merch Titans (25 scans/day no-account, unlimited with free account), plus isCompliant and bundled in Merch Informer; Amazon Merch already screens trademarks at upload (platform IS the screen); USPTO data is the very asset incumbents already built and give away; no room to charge $20/mo for a free single-feature |
@@ -361,6 +365,45 @@ Last run date: 2026-06-23
   ideation with a clean slate — do not loop triage past an empty backlog. No
   Shivam decision is required to proceed; ProgramPilot (#3) stays reopenable.
 
+### IDEATION RESUMES (Run #16) — backlog-clear, 2/2 kill:
+- FIRST net-new ideation run after the three-run triage sweep (#13–15) emptied the
+  backlog. Resumed by default per Run #15's handoff — no Shivam decision needed.
+- BOTH ideas killed at stress test on live verification (2/2 kill):
+  • RoyaltyRoll (multi-platform royalty reconciliation, self-pub authors) → KILL.
+    Reconciliation wedge already shipped — Royalties HQ reconciles expected-vs-actual;
+    ScribeCount aggregates 10 platforms + Payments/anomaly page + public roadmap to
+    deepen it. "Leak" is mostly KDP reporting-lag that self-corrects (no recoverable
+    money). Free tiers anchor price; no KDP API → fragile scrape + HIGH platform risk.
+  • PostCheck (pre-publish brand-deal QC, creators) → KILL. CreatorFlo $24/mo ships
+    contract extraction + risk-flag at the price; ChatGPT does pre-post check free;
+    episodic (2–4 posts/mo) not recurring; deterministic extraction = false-positive
+    machine. Real pain is late/withheld payment, not forgotten-tag clawback.
+- INCUMBENT-INSTINCT TALLY: Agent 1's "no/weak incumbent" framing has now failed live
+  verification 9 RUNS RUNNING (#7→#16). The name-and-link rule remains load-bearing —
+  both ideas this run died to a single search each. Treat every gap claim as false by
+  default; the wedge sentence must be falsified BEFORE the idea is written up, not after.
+- MECHANISM RECYCLING (repeat of the Run #12 symptom): RoyaltyRoll = reconciliation
+  (cf. CommissionHound #9); PostCheck = rule-based verification/QC (cf. MarkGuard #11,
+  FormFlag #11). Zero genuinely new mechanisms this run. The ideator is reaching again
+  the moment it resumes from a clean slate — net-new ideation post-triage did not reset
+  the exhaustion. Worth watching whether the idea-space is structurally mined out.
+- AUTO-SKIP STATUS: standing policy needs TWO consecutive 2/2 IDEATION-kill runs to
+  trigger a triage (triage runs #13–15 do NOT count). Run #16 is the FIRST such run.
+  Run #17 resumes net-new ideation by default. If #17 is also 2/2 kill, the trigger
+  fires — but the backlog is empty, so a "triage" run would have nothing to triage;
+  in that case Run #18 should instead pivot the IDEATION INPUT (new persona domains /
+  a different mechanism class), or surface to Shivam that the current idea-space is
+  exhausted and ask for a domain steer. Flagged via push this run.
+
+### Process note (Run #16):
+- Local `main` was stale at Run #2 state (23841b0) AGAIN — the recurring footgun
+  (6th+ time). `git fetch origin main` showed origin/main current at Run #15 (f55a124);
+  reset local main to origin/main before STEP 4 to avoid stranding. Still worth a
+  permanent harness fix (auto-sync local main before the run starts).
+- EMAIL DELIVERY: SendGrid attempted once per STEP 5, expected HTTP 403 "Host not in
+  allowlist: api.sendgrid.com" (blocked every run since #6). Not retried. Push
+  notification + GitHub main remain the working delivery channels.
+
 ### Process note (Run #14):
 - Local `main` ref was stale at Run #2 state (23841b0); `git fetch origin main`
   confirmed origin/main was actually current at Run #13 (36d9957) and that HEAD
@@ -529,27 +572,40 @@ Last run date: 2026-06-23
 - No open backlog questions remain. The next questions come from Run #16's
   net-new ideas.
 
-### PRIORITY for next run (set Run #15 — TRIAGE COMPLETE, RESUME IDEATION):
-- THREE triage runs (#13, #14, #15) have now cleared the ENTIRE backlog. Run #15
-  was a clean sweep: PrepPilot, DealGate, ScopeGuard, PatchPilot all killed.
-  Backlog = 0 (hotbox 0, undiscussed 0). The freshness rule is fully validated
-  (7 leads re-verified across #13–15, all died/downgraded).
-- RUN #16 MUST RESUME NET-NEW IDEATION. The triage mandate is complete; do not
-  loop triage past an empty queue. Generate 2 fresh ideas per STEP 2–3, applying
-  every accumulated screen below (Agent 1 avoid-categories + name-and-link rule).
-  No Shivam decision is required to proceed — resume by default.
-- IDEATION GUARDRAILS carried in (the kills taught these — apply at ideation, not
-  just stress-test): (1) name+LINK the closest incumbent and state the gap as a
-  falsifiable sentence — the "no incumbent" instinct has been wrong 8 runs
-  straight, treat every gap claim as false until proven; (2) screen reachability
-  FIRST for offline micro-operators (PrepPilot/MenuCost both died on this wall) —
-  name the affordable, targetable channel or don't propose it; (3) avoid
-  probabilistic mechanisms that force the user to re-check output (FormFlag/
-  ScopeGuard); (4) avoid products needing ToS-blocked or CASA-restricted data;
-  (5) pre-screen TAM — persona must support a 500-cap launch without owning >5–10%.
-- STANDING POLICY now in force (confirm-by-default unless Shivam objects):
-  (a) AUTO-SKIP ideation only when the prior TWO runs were both 2/2 IDEATION
-      kills (triage runs don't count) — then run a triage instead.
+### PRIORITY for next run (set Run #16 — RESUME IDEATION, but watch exhaustion):
+- Run #16 resumed net-new ideation (backlog empty since #15) and went 2/2 KILL
+  (RoyaltyRoll, PostCheck) — both to a single live search. Kill rate 81%.
+- RUN #17 RESUMES NET-NEW IDEATION by default (auto-skip needs TWO consecutive
+  2/2 ideation kills; #16 is the first — see policy (a) below). BUT change the
+  INPUT, don't just re-run the same engine: Run #16 recycled mechanisms it had
+  already used (reconciliation, verification/QC) and re-tripped the incumbent wall
+  on the first search. For Run #17, force (i) a mechanism NOT yet used as a lead,
+  and (ii) at least one idea from a personal-interest domain not recently mined
+  (gaming/streaming, podcasting, tour-guides, run-club/fitness-community are the
+  least-touched; fitness-coach / food-operator / travel-advisor / matchmaker /
+  creator-brand-deal lanes are heavily killed — avoid).
+- HARD PRE-WRITE GATE (new, from the 9-run incumbent streak): Agent 1 must run the
+  live name-and-link search and FALSIFY the wedge sentence BEFORE writing the idea
+  up — if the closest incumbent already ships the wedge, discard and regenerate
+  rather than submitting it for Agent 2 to kill. This stops burning runs on ideas
+  that die to one search.
+- IDEATION GUARDRAILS (apply at ideation, not just stress-test): (1) name+LINK the
+  closest incumbent, state the gap as a falsifiable sentence, and pre-falsify it —
+  the "no incumbent" instinct has now been wrong 9 runs straight; (2) screen
+  reachability FIRST for offline micro-operators (PrepPilot/MenuCost died on this);
+  (3) avoid probabilistic/extraction mechanisms that force the user to re-check
+  output (FormFlag/ScopeGuard/PostCheck); (4) avoid products needing ToS-blocked or
+  CASA-restricted data, or with no official API (RoyaltyRoll/KDP); (5) pre-screen
+  TAM — persona must support a 500-cap launch without owning >5–10%; (6) avoid
+  "leak/recovery" pitches where the supposed leak is self-correcting reporting lag,
+  not recoverable money (RoyaltyRoll lesson).
+- STANDING POLICY in force (confirm-by-default unless Shivam objects):
+  (a) AUTO-SKIP ideation only when the prior TWO runs were both 2/2 IDEATION kills
+      (triage runs don't count). Run #16 = first such run. If Run #17 is also 2/2,
+      the trigger fires — but the backlog is EMPTY, so there's nothing to triage;
+      in that case Run #18 should PIVOT THE IDEATION INPUT (new domains/mechanism)
+      and/or surface to Shivam that the idea-space may be exhausted and ask for a
+      domain steer, rather than running an empty triage.
   (b) FRESHNESS RULE: any backlog lead >4 runs old gets a competitor re-scan
       before it's treated as bankable. Parked ≠ preserved (proven 7×).
 - ProgramPilot (#3) remains the one reopenable item (closed for non-engagement,
