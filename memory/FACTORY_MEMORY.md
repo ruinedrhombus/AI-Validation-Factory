@@ -1,19 +1,19 @@
 # FACTORY MEMORY — AI Validation Factory
-Last updated: 2026-06-24
-Total runs: 16
-Last run date: 2026-06-24
+Last updated: 2026-06-25
+Total runs: 17
+Last run date: 2026-06-25
 
 ---
 
 ## QUICK STATS
 | Metric | Count |
 |--------|-------|
-| Total runs | 16 |
-| Ideas generated | 26 |
-| Killed (immediate + triage) | 21 |
+| Total runs | 17 |
+| Ideas generated | 28 |
+| Killed (immediate + triage) | 23 |
 | Discussed | 6 |
 | Proceeded to validation | 0 |
-| Kill rate | 81% |
+| Kill rate | 82% |
 | Backlog (hotbox + undiscussed) | 0 — EXHAUSTED |
 
 ---
@@ -47,6 +47,8 @@ Last run date: 2026-06-24
 | 12 | 2026-06-20 | CakeQuote | Solo home-based custom-cake bakers (10–25 orders/wk via Instagram DMs) | Killed at stress test — Bakesy ($10/mo) ships the exact product and markets "move off Instagram DMs" with auto-capture order forms; CakeBoss $15, BakeProfit free, Bake Diary cover same workflow; free Google Forms+Sheets is good enough below ~25 orders/wk |
 | 16 | 2026-06-24 | RoyaltyRoll | Solo "wide" self-published authors ($1k+/mo across 6–8 platforms) | Killed at stress test — reconciliation wedge already shipped: Royalties HQ reconciles expected-vs-actual payments; ScribeCount ($0–$20/mo) aggregates 10 platforms + Payments/anomaly page + public roadmap to deepen FX/payout reconciliation; the "leak" is mostly KDP reporting-lag that self-corrects (not recoverable money); free tiers anchor price; no official KDP API → fragile scraping + HIGH platform risk |
 | 16 | 2026-06-24 | PostCheck | Solo social-media creators (10k–500k followers) taking paid brand deals | Killed at stress test — CreatorFlo ($24/mo) ships AI contract extraction + deliverable parsing + risk-flagging at the exact price; ChatGPT does the pre-post check free; episodic (2–4 posts/mo) not recurring; deterministic-extraction accuracy shaky; real creator pain is late/withheld payment, not forgotten-tag clawback |
+| 17 | 2026-06-25 | TourYield | Solo independent tour/experience operators (FareHarbor/Rezdy/Bokun) | Killed PRE-WRITE on one search — dynamic pricing is a NATIVE feature of every booking platform the persona already pays for (FareHarbor "Dynamic Pricing rules", Zaui "Dynamic Pricing Toolkit", Rezdy/Bokun/TripWorks/Ventrata all ship it). Platform-as-screen; no standalone wedge; won't pay extra for a bundled checkbox. New mechanism (dynamic pricing), least-mined domain (travel/tours) |
+| 17 | 2026-06-25 | StreamScout | Growth-stage variety Twitch streamers (50–500 followers) | Killed PRE-WRITE on one search — StreamGist already ships the exact product ("compare demand, competition, and fit before picking what to play… GistScore, fit notes, watch-outs") on top of FREE public category data (TwitchTracker/Streams Charts/SullyGnome). Near-zero persona WTP. New mechanism (opportunity-scoring), least-mined domain (gaming/streaming) |
 
 ---
 
@@ -395,6 +397,48 @@ Last run date: 2026-06-24
   a different mechanism class), or surface to Shivam that the current idea-space is
   exhausted and ask for a domain steer. Flagged via push this run.
 
+### IDEA-SPACE EXHAUSTION CONFIRMED (Run #17) — second consecutive 2/2 ideation kill, auto-skip trigger FIRES:
+- Second net-new ideation run after the triage sweep. Agent 1 generated FIVE candidates
+  across ALL FOUR least-mined domains; Agent 2 killed ALL FIVE to a single live search
+  each, BEFORE write-up (the HARD PRE-WRITE GATE working as designed):
+  • TourYield (travel/tours, dynamic pricing) → native in FareHarbor/Rezdy/Bokun/Zaui/
+    TripWorks/Ventrata. Platform-as-screen, MarkGuard-pattern in a new vertical.
+  • StreamScout (gaming/streaming, opportunity-scoring) → StreamGist ships it exactly, on
+    free TwitchTracker/Streams Charts data; persona WTP ≈ $0.
+  • Paid-GM ops tool (gaming) → StartPlaying owns booking/payments/scheduling; thin TAM.
+  • Podcast retention-fix (podcasting) → Spotify/Apple/Blubrry give graphs free; fixes are
+    "productized common knowledge" (PeakDate pattern).
+  • Pickleball social-night organizer (sports) → 6+ apps, several FREE (PickleQ/Pickleheads/
+    Picklebeast/MatchUp/PlayMore); organizers don't monetize.
+- Both REQUIRED standing-instruction inputs were honored — new mechanisms (dynamic pricing,
+  opportunity-scoring), least-mined domains (travel, gaming) — and it made NO difference.
+  Changing the input did not change the outcome. This is the key datum.
+- INCUMBENT-INSTINCT TALLY: Agent 1's "no/weak incumbent" framing has now failed live
+  verification 10 RUNS RUNNING (#7→#17). The pre-write gate caught all five this run with
+  zero spend — but it is now catching EVERYTHING, which is itself the finding.
+- STRUCTURAL DIAGNOSIS (the actual output of Run #17): the factory's reachable, monetizable
+  idea-space is mined out. Popular reachable prosumer niche → tooling already shipped (free
+  or bundled into the platform the persona pays). Obscure niche → unreachable persona or
+  sub-500 TAM. Every domain the factory can BOTH reach AND monetize is already served.
+- AUTO-SKIP TRIGGER FIRES: #16 and #17 are two consecutive 2/2 IDEATION kills — the exact
+  condition. But the backlog is EMPTY, so Run #18 cannot be a triage run. Per the Run #16
+  policy, Run #18 must PIVOT THE IDEATION INPUT and/or get a domain steer from Shivam.
+  Blind net-new ideation in Run #18 will 2/2-kill again — do not run it.
+- ESCALATED TO SHIVAM via push (this run): three concrete pivots offered — (1) drop the
+  "fully unbiased / no-domain-advantage" rule for one run and let ideas use his AppSec/
+  DevSecOps edge (defensible wedges need an unfair advantage; the rule forecloses his only
+  one); (2) move the buyer up from solo-prosumer ($0 budget) to small-team operator that
+  already pays for software ($50–100/mo wedge); (3) have Shivam name a deliberately boring
+  non-consumer-lifestyle vertical (gaps survive in dull niches, not popular ones).
+
+### Process note (Run #17):
+- Local `main` was stale at Run #2 state (23841b0) AGAIN — the recurring footgun (7th+ time).
+  origin/main current at Run #16 (d912d98); working branch already at d912d98. Reset/sync
+  local main to origin/main before STEP 4. Still warrants a permanent harness fix.
+- EMAIL DELIVERY: SendGrid attempted once per STEP 5, expected HTTP 403 "Host not in
+  allowlist: api.sendgrid.com" (blocked every run since #6). Not retried. Push notification +
+  GitHub main remain the working delivery channels.
+
 ### Process note (Run #16):
 - Local `main` was stale at Run #2 state (23841b0) AGAIN — the recurring footgun
   (6th+ time). `git fetch origin main` showed origin/main current at Run #15 (f55a124);
@@ -572,18 +616,32 @@ Last run date: 2026-06-24
 - No open backlog questions remain. The next questions come from Run #16's
   net-new ideas.
 
-### PRIORITY for next run (set Run #16 — RESUME IDEATION, but watch exhaustion):
-- Run #16 resumed net-new ideation (backlog empty since #15) and went 2/2 KILL
-  (RoyaltyRoll, PostCheck) — both to a single live search. Kill rate 81%.
-- RUN #17 RESUMES NET-NEW IDEATION by default (auto-skip needs TWO consecutive
-  2/2 ideation kills; #16 is the first — see policy (a) below). BUT change the
-  INPUT, don't just re-run the same engine: Run #16 recycled mechanisms it had
-  already used (reconciliation, verification/QC) and re-tripped the incumbent wall
-  on the first search. For Run #17, force (i) a mechanism NOT yet used as a lead,
-  and (ii) at least one idea from a personal-interest domain not recently mined
-  (gaming/streaming, podcasting, tour-guides, run-club/fitness-community are the
-  least-touched; fitness-coach / food-operator / travel-advisor / matchmaker /
-  creator-brand-deal lanes are heavily killed — avoid).
+### PRIORITY for next run (set Run #17 — DO NOT BLIND-IDEATE; GET A DOMAIN STEER):
+- TRIGGER HAS FIRED. Runs #16 and #17 are two consecutive 2/2 IDEATION kills
+  (RoyaltyRoll+PostCheck; TourYield+StreamScout). Kill rate 82%. Per policy (a),
+  the auto-skip condition is met — but the backlog is EMPTY, so Run #18 cannot be
+  a triage run.
+- RUN #18 MUST NOT RUN A BLIND NET-NEW IDEATION PASS. Run #17 already proved input
+  variation does not help: it forced new mechanisms AND least-mined domains and STILL
+  killed 5/5 candidates to single searches. The same engine will 2/2-kill again.
+- RUN #18 REQUIRED ACTION — surface to Shivam and get a DOMAIN STEER before generating.
+  Default if Shivam has given no direction by Run #18: do NOT auto-generate two more
+  doomed ideas. Instead emit a one-screen "idea-space exhausted — pick a steer" prompt
+  and pause net-new ideation. The three pivots offered (pick one):
+  (1) DROP the "fully unbiased / no-domain-advantage" rule for one run — let ideas use
+      Shivam's AppSec/DevSecOps/observability edge. Defensible wedges need an unfair
+      advantage; the current rule forecloses his only one. (Note: this contradicts the
+      standing CLAUDE.md constraint "domain advantage permanently disabled" — needs
+      Shivam's explicit OK to override.)
+  (2) MOVE THE BUYER UP from solo-prosumer ($0 budget, served by free tools) to the
+      small-team operator (2–10 people) that already pays for software and feels a
+      $50–100/mo wedge. Loosens "prosumer-only" + "$15–25/mo" — needs Shivam's OK.
+  (3) Shivam NAMES a deliberately boring, non-consumer-lifestyle vertical to mine —
+      gaps survive in dull B2B-of-one niches, not popular consumer domains.
+- DOMAINS NOW BURNED (do not re-mine without a new mechanism + fresh re-scan): travel/
+  tours, gaming/streaming, gaming/GMs, podcasting, sports/pickleball, fitness-coach,
+  food-operator, travel-advisor, matchmaker, creator-brand-deal, self-pub authors,
+  dev-tooling/SaaS-ops, HR-consulting, grant-writing.
 - HARD PRE-WRITE GATE (new, from the 9-run incumbent streak): Agent 1 must run the
   live name-and-link search and FALSIFY the wedge sentence BEFORE writing the idea
   up — if the closest incumbent already ships the wedge, discard and regenerate
