@@ -1,14 +1,14 @@
 # FACTORY MEMORY — AI Validation Factory
-Last updated: 2026-06-25
-Total runs: 17
-Last run date: 2026-06-25
+Last updated: 2026-06-26
+Total runs: 18
+Last run date: 2026-06-26
 
 ---
 
 ## QUICK STATS
 | Metric | Count |
 |--------|-------|
-| Total runs | 17 |
+| Total runs | 18 |
 | Ideas generated | 28 |
 | Killed (immediate + triage) | 23 |
 | Discussed | 6 |
@@ -49,6 +49,7 @@ Last run date: 2026-06-25
 | 16 | 2026-06-24 | PostCheck | Solo social-media creators (10k–500k followers) taking paid brand deals | Killed at stress test — CreatorFlo ($24/mo) ships AI contract extraction + deliverable parsing + risk-flagging at the exact price; ChatGPT does the pre-post check free; episodic (2–4 posts/mo) not recurring; deterministic-extraction accuracy shaky; real creator pain is late/withheld payment, not forgotten-tag clawback |
 | 17 | 2026-06-25 | TourYield | Solo independent tour/experience operators (FareHarbor/Rezdy/Bokun) | Killed PRE-WRITE on one search — dynamic pricing is a NATIVE feature of every booking platform the persona already pays for (FareHarbor "Dynamic Pricing rules", Zaui "Dynamic Pricing Toolkit", Rezdy/Bokun/TripWorks/Ventrata all ship it). Platform-as-screen; no standalone wedge; won't pay extra for a bundled checkbox. New mechanism (dynamic pricing), least-mined domain (travel/tours) |
 | 17 | 2026-06-25 | StreamScout | Growth-stage variety Twitch streamers (50–500 followers) | Killed PRE-WRITE on one search — StreamGist already ships the exact product ("compare demand, competition, and fit before picking what to play… GistScore, fit notes, watch-outs") on top of FREE public category data (TwitchTracker/Streams Charts/SullyGnome). Near-zero persona WTP. New mechanism (opportunity-scoring), least-mined domain (gaming/streaming) |
+| 18 | 2026-06-26 | — (NO IDEAS — deliberate pause) | — | PAUSED — auto-skip trigger fired (#16 + #17 both 2/2 ideation kills), backlog empty (nothing to triage), Shivam's notes still empty. Per the standing instruction set across #16/#17, did NOT run a blind ideation pass (Run #17 proved input variation doesn't help — 5/5 killed to single searches even with forced new mechanisms + least-mined domains). Emitted a one-screen "idea-space exhausted — pick a steer" prompt instead and HELD net-new ideation. Escalated to Shivam via push; awaiting steer (1: use domain edge / 2: move buyer up to small-team / 3: name a boring vertical) |
 
 ---
 
@@ -431,6 +432,41 @@ Last run date: 2026-06-25
   already pays for software ($50–100/mo wedge); (3) have Shivam name a deliberately boring
   non-consumer-lifestyle vertical (gaps survive in dull niches, not popular ones).
 
+### IDEATION PAUSED (Run #18) — auto-skip trigger honored, steer requested, NO blind ideation:
+- FIRST run to act on the fired auto-skip trigger by PAUSING net-new ideation rather
+  than generating. Conditions all met: #16 + #17 were two consecutive 2/2 IDEATION
+  kills (trigger fired), backlog EMPTY (no triage possible), Shivam's notes still empty
+  across #13–#18 (no direction received). Per the Run #16/#17 standing policy, Run #18
+  did NOT auto-generate two more doomed ideas.
+- RATIONALE (already proven, not speculative): Run #17 ran the experiment — forced new
+  mechanisms (dynamic pricing, opportunity-scoring) AND the least-mined domains (travel,
+  gaming, podcasting, sports) and Agent 2 still killed 5/5 candidates to a single search
+  each. Input variation does not change the outcome. A blind #18 pass would 2/2-kill
+  again and burn the run. Generating would have been negative-value.
+- ACTION TAKEN: emitted the one-screen "idea-space exhausted — pick a steer" report
+  (reports/2026-06-26.md) and held ideation. Three pivots offered to Shivam (pick one):
+  (1) DROP the no-domain-advantage rule for one run — use his AppSec/DevSecOps/observability
+      edge (overrides the CLAUDE.md "domain advantage permanently disabled" constraint →
+      needs his explicit OK). (2) MOVE THE BUYER UP from $0-budget solo-prosumer to a
+      small-team operator (2–10) that already pays for software and feels a $50–100/mo
+      wedge (loosens prosumer-only + $15–25/mo → needs his OK). (3) Shivam NAMES a
+      deliberately boring non-consumer-lifestyle vertical to mine.
+- ESCALATED TO SHIVAM via push this run. The factory is now HELD: do NOT auto-generate
+  in Run #19 either. Resume net-new ideation only once Shivam supplies a steer (1/2/3 or
+  his own). If still no direction by the next run, re-surface the same one-screen prompt —
+  do not drift back into blind ideation. This is the terminal state of the current ruleset;
+  it can only be unblocked by a constraint change from Shivam.
+- INCUMBENT-INSTINCT TALLY unchanged at 10 runs (#7→#17); no new ideas this run to test it.
+
+### Process note (Run #18):
+- Local `main` was stale at Run #2 state (23841b0) AGAIN — the recurring footgun (8th+
+  time). `git fetch origin main` showed origin/main current at Run #17 (0458eca); working
+  branch HEAD already at 0458eca. Reset local main to origin/main before STEP 4. Still
+  warrants a permanent harness fix (auto-sync local main before the run starts).
+- EMAIL DELIVERY: SendGrid attempted once per STEP 5, expected HTTP 403 "Host not in
+  allowlist: api.sendgrid.com" (blocked every run since #6). Not retried. Push notification
+  + GitHub main remain the working delivery channels.
+
 ### Process note (Run #17):
 - Local `main` was stale at Run #2 state (23841b0) AGAIN — the recurring footgun (7th+ time).
   origin/main current at Run #16 (d912d98); working branch already at d912d98. Reset/sync
@@ -616,18 +652,17 @@ Last run date: 2026-06-25
 - No open backlog questions remain. The next questions come from Run #16's
   net-new ideas.
 
-### PRIORITY for next run (set Run #17 — DO NOT BLIND-IDEATE; GET A DOMAIN STEER):
-- TRIGGER HAS FIRED. Runs #16 and #17 are two consecutive 2/2 IDEATION kills
-  (RoyaltyRoll+PostCheck; TourYield+StreamScout). Kill rate 82%. Per policy (a),
-  the auto-skip condition is met — but the backlog is EMPTY, so Run #18 cannot be
-  a triage run.
-- RUN #18 MUST NOT RUN A BLIND NET-NEW IDEATION PASS. Run #17 already proved input
-  variation does not help: it forced new mechanisms AND least-mined domains and STILL
-  killed 5/5 candidates to single searches. The same engine will 2/2-kill again.
-- RUN #18 REQUIRED ACTION — surface to Shivam and get a DOMAIN STEER before generating.
-  Default if Shivam has given no direction by Run #18: do NOT auto-generate two more
-  doomed ideas. Instead emit a one-screen "idea-space exhausted — pick a steer" prompt
-  and pause net-new ideation. The three pivots offered (pick one):
+### PRIORITY for next run (set Run #18 — FACTORY HELD; DO NOT IDEATE UNTIL SHIVAM STEERS):
+- STATE: ideation is PAUSED. Run #18 honored the fired auto-skip trigger and emitted the
+  steer-request prompt instead of generating. Shivam has NOT yet replied with a steer.
+- RUN #19 REQUIRED ACTION: do NOT auto-generate. Check Shivam's notes / session for a steer
+  (1 = use domain edge / 2 = small-team buyer / 3 = boring vertical / his own). 
+  • If a steer is present → resume net-new ideation against it (and, for steer 1 or 2, note
+    the steer explicitly overrides the relevant CLAUDE.md constraint with Shivam's OK).
+  • If still NO steer → re-surface the SAME one-screen "pick a steer" prompt via push and
+    hold again. Do NOT drift back into blind ideation — Run #17 proved it 2/2-kills
+    regardless of input. This is the terminal state of the current ruleset.
+- The three pivots on the table (unchanged; pick one):
   (1) DROP the "fully unbiased / no-domain-advantage" rule for one run — let ideas use
       Shivam's AppSec/DevSecOps/observability edge. Defensible wedges need an unfair
       advantage; the current rule forecloses his only one. (Note: this contradicts the
