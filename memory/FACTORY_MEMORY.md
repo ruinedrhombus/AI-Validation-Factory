@@ -1,14 +1,14 @@
 # FACTORY MEMORY — AI Validation Factory
-Last updated: 2026-06-26
-Total runs: 18
-Last run date: 2026-06-26
+Last updated: 2026-06-27
+Total runs: 19
+Last run date: 2026-06-27
 
 ---
 
 ## QUICK STATS
 | Metric | Count |
 |--------|-------|
-| Total runs | 18 |
+| Total runs | 19 |
 | Ideas generated | 28 |
 | Killed (immediate + triage) | 23 |
 | Discussed | 6 |
@@ -50,6 +50,7 @@ Last run date: 2026-06-26
 | 17 | 2026-06-25 | TourYield | Solo independent tour/experience operators (FareHarbor/Rezdy/Bokun) | Killed PRE-WRITE on one search — dynamic pricing is a NATIVE feature of every booking platform the persona already pays for (FareHarbor "Dynamic Pricing rules", Zaui "Dynamic Pricing Toolkit", Rezdy/Bokun/TripWorks/Ventrata all ship it). Platform-as-screen; no standalone wedge; won't pay extra for a bundled checkbox. New mechanism (dynamic pricing), least-mined domain (travel/tours) |
 | 17 | 2026-06-25 | StreamScout | Growth-stage variety Twitch streamers (50–500 followers) | Killed PRE-WRITE on one search — StreamGist already ships the exact product ("compare demand, competition, and fit before picking what to play… GistScore, fit notes, watch-outs") on top of FREE public category data (TwitchTracker/Streams Charts/SullyGnome). Near-zero persona WTP. New mechanism (opportunity-scoring), least-mined domain (gaming/streaming) |
 | 18 | 2026-06-26 | — (NO IDEAS — deliberate pause) | — | PAUSED — auto-skip trigger fired (#16 + #17 both 2/2 ideation kills), backlog empty (nothing to triage), Shivam's notes still empty. Per the standing instruction set across #16/#17, did NOT run a blind ideation pass (Run #17 proved input variation doesn't help — 5/5 killed to single searches even with forced new mechanisms + least-mined domains). Emitted a one-screen "idea-space exhausted — pick a steer" prompt instead and HELD net-new ideation. Escalated to Shivam via push; awaiting steer (1: use domain edge / 2: move buyer up to small-team / 3: name a boring vertical) |
+| 19 | 2026-06-27 | — (NO IDEAS — still held) | — | STILL HELD (day 2) — re-surfaced the same steer prompt per Run #18's standing instruction. Pre-hold checks all unchanged: Shivam's notes empty (no steer #13–#19), no new/active session file, backlog empty, auto-skip trigger still fired. Did NOT auto-generate (Run #17 proved a blind pass 2/2-kills regardless of input). First re-surface after the initial #18 ask; re-pushed to Shivam. Terminal state of the current ruleset — only a constraint change (steer 1/2/3) unblocks it. |
 
 ---
 
@@ -458,6 +459,36 @@ Last run date: 2026-06-26
   it can only be unblocked by a constraint change from Shivam.
 - INCUMBENT-INSTINCT TALLY unchanged at 10 runs (#7→#17); no new ideas this run to test it.
 
+### IDEATION STILL PAUSED (Run #19) — first re-surface, no steer received:
+- SECOND consecutive held run. Conditions all unchanged from Run #18: auto-skip
+  trigger still fired (#16 + #17 = two consecutive 2/2 ideation kills), backlog
+  EMPTY (nothing to triage), Shivam's notes empty across #13–#19, no new/active
+  session file = no steer received.
+- ACTION TAKEN per Run #18's standing instruction ("if still NO steer → re-surface
+  the SAME one-screen prompt and hold again; do NOT drift back into blind
+  ideation"): emitted reports/2026-06-27.md re-surfacing the identical steer
+  request (1 = domain edge / 2 = small-team buyer / 3 = boring vertical) and held.
+  Did NOT auto-generate — Run #17 already proved input variation 2/2-kills.
+- This is the FIRST re-surface after the initial #18 ask (one day prior). Re-pushed
+  to Shivam. Cadence note for future runs: this is a reminder, not a new finding —
+  if the held state persists for several more runs with no reply, back off the push
+  frequency (re-surface in the report every run, but avoid daily identical pushes
+  becoming noise). One reminder day-after is appropriate.
+- INCUMBENT-INSTINCT TALLY unchanged at 10 runs (#7→#17); no new ideas to test it.
+- TERMINAL STATE REMINDER: this can only be unblocked by a constraint change from
+  Shivam. Run #20 repeats: check for steer → if present, ideate against it → if
+  absent, re-surface + hold.
+
+### Process note (Run #19):
+- Local `main` was stale at Run #2 state (23841b0) AGAIN — the recurring footgun
+  (9th+ time). `git fetch origin main` showed origin/main current at Run #18
+  (08bb1d6); working branch HEAD already at 08bb1d6 (in sync). Reset local main to
+  origin/main before STEP 4. Still warrants a permanent harness fix (auto-sync
+  local main before the run starts).
+- EMAIL DELIVERY: SendGrid attempted once per STEP 5, expected HTTP 403 "Host not
+  in allowlist: api.sendgrid.com" (blocked every run since #6). Not retried. Push
+  notification + GitHub main remain the working delivery channels.
+
 ### Process note (Run #18):
 - Local `main` was stale at Run #2 state (23841b0) AGAIN — the recurring footgun (8th+
   time). `git fetch origin main` showed origin/main current at Run #17 (0458eca); working
@@ -652,16 +683,20 @@ Last run date: 2026-06-26
 - No open backlog questions remain. The next questions come from Run #16's
   net-new ideas.
 
-### PRIORITY for next run (set Run #18 — FACTORY HELD; DO NOT IDEATE UNTIL SHIVAM STEERS):
-- STATE: ideation is PAUSED. Run #18 honored the fired auto-skip trigger and emitted the
-  steer-request prompt instead of generating. Shivam has NOT yet replied with a steer.
-- RUN #19 REQUIRED ACTION: do NOT auto-generate. Check Shivam's notes / session for a steer
+### PRIORITY for next run (set Run #19 — FACTORY HELD; DO NOT IDEATE UNTIL SHIVAM STEERS):
+- STATE: ideation is PAUSED (2 runs now: #18 asked, #19 re-surfaced). Both honored the
+  fired auto-skip trigger and emitted the steer-request prompt instead of generating.
+  Shivam has NOT yet replied with a steer.
+- RUN #20 REQUIRED ACTION: do NOT auto-generate. Check Shivam's notes / session for a steer
   (1 = use domain edge / 2 = small-team buyer / 3 = boring vertical / his own). 
   • If a steer is present → resume net-new ideation against it (and, for steer 1 or 2, note
     the steer explicitly overrides the relevant CLAUDE.md constraint with Shivam's OK).
-  • If still NO steer → re-surface the SAME one-screen "pick a steer" prompt via push and
-    hold again. Do NOT drift back into blind ideation — Run #17 proved it 2/2-kills
+  • If still NO steer → re-surface the SAME one-screen "pick a steer" prompt in the report
+    and hold again. Do NOT drift back into blind ideation — Run #17 proved it 2/2-kills
     regardless of input. This is the terminal state of the current ruleset.
+  • CADENCE: re-surface in the report every held run, but throttle the PUSH — #18 + #19
+    already pushed on consecutive days. If still no reply by Run #20+, hold quietly (report
+    only) rather than pushing identical reminders daily; push again only on a state change.
 - The three pivots on the table (unchanged; pick one):
   (1) DROP the "fully unbiased / no-domain-advantage" rule for one run — let ideas use
       Shivam's AppSec/DevSecOps/observability edge. Defensible wedges need an unfair
