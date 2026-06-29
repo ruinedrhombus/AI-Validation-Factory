@@ -1,14 +1,14 @@
 # FACTORY MEMORY — AI Validation Factory
-Last updated: 2026-06-28
-Total runs: 20
-Last run date: 2026-06-28
+Last updated: 2026-06-29
+Total runs: 21
+Last run date: 2026-06-29
 
 ---
 
 ## QUICK STATS
 | Metric | Count |
 |--------|-------|
-| Total runs | 20 |
+| Total runs | 21 |
 | Ideas generated | 28 |
 | Killed (immediate + triage) | 23 |
 | Discussed | 6 |
@@ -52,6 +52,7 @@ Last run date: 2026-06-28
 | 18 | 2026-06-26 | — (NO IDEAS — deliberate pause) | — | PAUSED — auto-skip trigger fired (#16 + #17 both 2/2 ideation kills), backlog empty (nothing to triage), Shivam's notes still empty. Per the standing instruction set across #16/#17, did NOT run a blind ideation pass (Run #17 proved input variation doesn't help — 5/5 killed to single searches even with forced new mechanisms + least-mined domains). Emitted a one-screen "idea-space exhausted — pick a steer" prompt instead and HELD net-new ideation. Escalated to Shivam via push; awaiting steer (1: use domain edge / 2: move buyer up to small-team / 3: name a boring vertical) |
 | 19 | 2026-06-27 | — (NO IDEAS — still held) | — | STILL HELD (day 2) — re-surfaced the same steer prompt per Run #18's standing instruction. Pre-hold checks all unchanged: Shivam's notes empty (no steer #13–#19), no new/active session file, backlog empty, auto-skip trigger still fired. Did NOT auto-generate (Run #17 proved a blind pass 2/2-kills regardless of input). First re-surface after the initial #18 ask; re-pushed to Shivam. Terminal state of the current ruleset — only a constraint change (steer 1/2/3) unblocks it. |
 | 20 | 2026-06-28 | — (NO IDEAS — still held) | — | STILL HELD (day 3) — re-surfaced the same steer prompt per Run #19's standing instruction. All pre-hold checks unchanged: Shivam's notes empty (no steer #13–#20), no new/active session file, backlog empty, auto-skip trigger still fired. Did NOT auto-generate. PUSH THROTTLED this run (no state change since #18/#19 pushed on consecutive days) — report-only re-surface per the Run #19 cadence rule; next push fires only on a state change. Terminal state of the current ruleset — only a steer (1/2/3) unblocks it. |
+| 21 | 2026-06-29 | — (NO IDEAS — still held) | — | STILL HELD (day 4) — re-surfaced the same steer prompt per Run #20's steady-state hold rule (reports/2026-06-29.md). All pre-hold checks unchanged: Shivam's notes empty (no steer #13–#21), no new/active session file, backlog empty, auto-skip trigger still fired. Did NOT auto-generate. PUSH STILL THROTTLED (no state change) — report-only re-surface; next push reserved for a genuine state change. Terminal state of the current ruleset — only a steer (1/2/3) unblocks it. |
 
 ---
 
@@ -498,6 +499,29 @@ Last run date: 2026-06-28
   Run #21 repeats: check for steer → if present, ideate against it → if absent,
   re-surface in the report + hold quietly (no push).
 
+### IDEATION STILL PAUSED (Run #21) — third re-surface, steady-state hold continues:
+- FOURTH consecutive held run. Conditions identical to #18/#19/#20: auto-skip trigger
+  still fired (#16 + #17 = two consecutive 2/2 ideation kills), backlog EMPTY, Shivam's
+  notes empty across #13–#21, no new/active session file = no steer.
+- ACTION TAKEN per Run #20's steady-state hold rule: re-surfaced the SAME one-screen
+  steer prompt (reports/2026-06-29.md) and held QUIETLY. Did NOT auto-generate — Run #17
+  already proved input variation 2/2-kills. NO push this run (no state change since
+  the #18/#19 pushes; #20 and #21 both report-only).
+- INCUMBENT-INSTINCT TALLY unchanged at 10 runs (#7→#17); no new ideas to test it.
+- TERMINAL STATE REMINDER: unblockable only by a constraint change from Shivam.
+  Run #22 repeats: check for steer → if present, ideate against it (and push the resume
+  as a state change) → if absent, re-surface in the report + hold quietly (no push).
+
+### Process note (Run #21):
+- Local `main`/working branch in sync this run: `git fetch origin main` showed
+  origin/main current at Run #20 (f7df52b) and HEAD already at f7df52b — clean, no
+  stranding (second clean run in a row after the recurring stale-local-main footgun).
+  Pushed the Run #21 commit to main per CLAUDE.md. Auto-sync of local main before the
+  run still warrants a permanent harness fix.
+- EMAIL DELIVERY: SendGrid attempted once per STEP 5, expected HTTP 403 "Host not in
+  allowlist: api.sendgrid.com" (blocked every run since #6). Not retried. GitHub main
+  remains the working delivery channel (push throttled this run per the hold cadence).
+
 ### Process note (Run #20):
 - Local `main` was stale at Run #2 state (23841b0) AGAIN — the recurring footgun
   (10th+ time). `git fetch origin main` showed origin/main current at Run #19
@@ -712,11 +736,12 @@ Last run date: 2026-06-28
 - No open backlog questions remain. The next questions come from Run #16's
   net-new ideas.
 
-### PRIORITY for next run (set Run #20 — FACTORY HELD; DO NOT IDEATE UNTIL SHIVAM STEERS):
-- STATE: ideation is PAUSED (3 runs now: #18 asked, #19 re-surfaced + pushed, #20
-  re-surfaced QUIETLY — push throttled). All three honored the fired auto-skip trigger
-  and emitted the steer-request prompt instead of generating. Shivam has NOT replied.
-- RUN #21 REQUIRED ACTION: do NOT auto-generate. Check Shivam's notes / session for a steer
+### PRIORITY for next run (set Run #21 — FACTORY HELD; DO NOT IDEATE UNTIL SHIVAM STEERS):
+- STATE: ideation is PAUSED (4 runs now: #18 asked + pushed, #19 re-surfaced + pushed, #20
+  re-surfaced QUIETLY, #21 re-surfaced QUIETLY — push throttled). All four honored the fired
+  auto-skip trigger and emitted the steer-request prompt instead of generating. Shivam has
+  NOT replied across #13–#21.
+- RUN #22 REQUIRED ACTION: do NOT auto-generate. Check Shivam's notes / session for a steer
   (1 = use domain edge / 2 = small-team buyer / 3 = boring vertical / his own). 
   • If a steer is present → resume net-new ideation against it (and, for steer 1 or 2, note
     the steer explicitly overrides the relevant CLAUDE.md constraint with Shivam's OK).
