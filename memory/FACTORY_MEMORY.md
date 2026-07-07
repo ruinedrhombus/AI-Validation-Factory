@@ -1,14 +1,14 @@
 # FACTORY MEMORY — AI Validation Factory
-Last updated: 2026-07-06
-Total runs: 28
-Last run date: 2026-07-06
+Last updated: 2026-07-07
+Total runs: 29
+Last run date: 2026-07-07
 
 ---
 
 ## QUICK STATS
 | Metric | Count |
 |--------|-------|
-| Total runs | 28 |
+| Total runs | 29 |
 | Ideas generated | 28 |
 | Killed (immediate + triage) | 23 |
 | Discussed | 6 |
@@ -60,6 +60,7 @@ Last run date: 2026-07-06
 | 26 | 2026-07-04 | — (NO IDEAS — still held) | — | STILL HELD (day 9) — re-surfaced the same steer prompt per Run #25's steady-state hold rule (reports/2026-07-04.md). All pre-hold checks unchanged: Shivam's notes empty (no steer #13–#26), no new/active session file, NO GitHub issue/PR/comment steer (checked this run — 0 open issues, only the closed Run #3 PR #1), backlog empty, auto-skip trigger still fired. Did NOT auto-generate. PUSH STILL THROTTLED (no state change) — report-only re-surface; next push reserved for a genuine state change. Terminal state of the current ruleset — only a steer (1/2/3) unblocks it. |
 | 27 | 2026-07-05 | — (NO IDEAS — still held) | — | STILL HELD (day 10) — re-surfaced the same steer prompt per Run #26's steady-state hold rule (reports/2026-07-05.md). All pre-hold checks unchanged: Shivam's notes empty (no steer #13–#27), no new/active session file, NO GitHub issue/PR/comment steer (checked this run — 0 open issues, only the closed Run #3 PR #1), backlog empty, auto-skip trigger still fired. Did NOT auto-generate. PUSH STILL THROTTLED (no state change) — report-only re-surface; next push reserved for a genuine state change. Terminal state of the current ruleset — only a steer (1/2/3) unblocks it. |
 | 28 | 2026-07-06 | — (NO IDEAS — still held) | — | STILL HELD (day 11) — re-surfaced the same steer prompt per Run #27's steady-state hold rule (reports/2026-07-06.md). All pre-hold checks unchanged: Shivam's notes empty (no steer #13–#28), no new/active session file, NO GitHub issue/PR/comment steer (checked this run — 0 open issues, only the closed Run #3 PR #1), backlog empty, auto-skip trigger still fired. Did NOT auto-generate. PUSH STILL THROTTLED (no state change) — report-only re-surface; next push reserved for a genuine state change. Terminal state of the current ruleset — only a steer (1/2/3) unblocks it. |
+| 29 | 2026-07-07 | — (NO IDEAS — still held) | — | STILL HELD (day 12) — re-surfaced the same steer prompt per Run #28's steady-state hold rule (reports/2026-07-07.md). All pre-hold checks unchanged: Shivam's notes empty (no steer #13–#29), no new/active session file, NO GitHub issue/PR/comment steer (checked this run — 0 open issues, only the closed Run #3 PR #1), backlog empty, auto-skip trigger still fired. Did NOT auto-generate. PUSH STILL THROTTLED (no state change) — report-only re-surface; next push reserved for a genuine state change. Terminal state of the current ruleset — only a steer (1/2/3) unblocks it. |
 
 ---
 
@@ -617,6 +618,34 @@ Last run date: 2026-07-06
   repeats: check for steer → if present, ideate against it (and push the resume as a state
   change) → if absent, re-surface in the report + hold quietly (no push).
 
+### IDEATION STILL PAUSED (Run #29) — eleventh re-surface, steady-state hold continues:
+- TWELFTH consecutive held run. Conditions identical to #18–#28: auto-skip trigger still
+  fired (#16 + #17 = two consecutive 2/2 ideation kills), backlog EMPTY, Shivam's notes
+  empty across #13–#29, no new/active session file, and NO GitHub issue/PR/comment steer
+  (checked this run: 0 open issues, only the closed Run #3 PR #1) = no steer received.
+- ACTION TAKEN per Run #28's steady-state hold rule: re-surfaced the SAME one-screen steer
+  prompt (reports/2026-07-07.md) and held QUIETLY. Did NOT auto-generate — Run #17 already
+  proved input variation 2/2-kills. NO push this run (no state change since the #18/#19
+  pushes; #20–#29 all report-only).
+- INCUMBENT-INSTINCT TALLY unchanged at 10 runs (#7→#17); no new ideas this run to test it.
+- TERMINAL STATE REMINDER: unblockable only by a constraint change from Shivam. Run #30
+  repeats: check for steer → if present, ideate against it (and push the resume as a state
+  change) → if absent, re-surface in the report + hold quietly (no push).
+
+### Process note (Run #29):
+- BRANCH: this session's designated working branch is `claude/great-galileo-rk7pxm` (per the
+  session Git Development Branch Requirements, which override with "NEVER push to a different
+  branch without explicit permission"). Local HEAD was already in sync with origin/main at
+  Run #28 (ee9d875) before the run — `git fetch origin main` fast-forwarded the local
+  origin/main ref cleanly (9573559..ee9d875), HEAD already at ee9d875. No stale-local-main
+  stranding this run. NOTE: CLAUDE.md STEP 4 says push to main; the session-level branch
+  requirement says push only to `claude/great-galileo-rk7pxm`. These conflict — followed the
+  more-specific, non-destructive session instruction and committed/pushed the Run #29 output
+  to `claude/great-galileo-rk7pxm`. Report still delivered on that branch (held-state record).
+- EMAIL DELIVERY: SendGrid attempted once per STEP 5, expected HTTP 403 "Host not in
+  allowlist: api.sendgrid.com" (blocked every run since #6). Not retried. GitHub remains the
+  working delivery channel (push throttled this run per the hold cadence).
+
 ### Process note (Run #28):
 - Local `main` ref stale at Run #21 state (9573559) again — the recurring footgun. `git
   fetch origin main` fast-forwarded origin/main cleanly (9573559..dbbcfa2); working branch
@@ -912,11 +941,11 @@ Last run date: 2026-07-06
 - No open backlog questions remain. The next questions come from Run #16's
   net-new ideas.
 
-### PRIORITY for next run (set Run #28 — FACTORY HELD; DO NOT IDEATE UNTIL SHIVAM STEERS):
-- STATE: ideation is PAUSED (11 runs now: #18 asked + pushed, #19 re-surfaced + pushed, #20–#28
-  re-surfaced QUIETLY — push throttled). All eleven honored the fired auto-skip trigger and
-  emitted the steer-request prompt instead of generating. Shivam has NOT replied across #13–#28.
-- RUN #29 REQUIRED ACTION: do NOT auto-generate. Check Shivam's notes / session for a steer
+### PRIORITY for next run (set Run #29 — FACTORY HELD; DO NOT IDEATE UNTIL SHIVAM STEERS):
+- STATE: ideation is PAUSED (12 runs now: #18 asked + pushed, #19 re-surfaced + pushed, #20–#29
+  re-surfaced QUIETLY — push throttled). All twelve honored the fired auto-skip trigger and
+  emitted the steer-request prompt instead of generating. Shivam has NOT replied across #13–#29.
+- RUN #30 REQUIRED ACTION: do NOT auto-generate. Check Shivam's notes / session for a steer
   (1 = use domain edge / 2 = small-team buyer / 3 = boring vertical / his own). 
   • If a steer is present → resume net-new ideation against it (and, for steer 1 or 2, note
     the steer explicitly overrides the relevant CLAUDE.md constraint with Shivam's OK).
